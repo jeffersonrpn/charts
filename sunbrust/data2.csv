@@ -1,0 +1,92 @@
+id,name,parent,value
+0,Brasil,,
+1,AC,Brasil,0
+2,AL,Brasil,0
+3,AM,Brasil,0
+4,BA,Brasil,0
+5,BR,Brasil,0
+6,CE,Brasil,0
+7,DF,Brasil,0
+8,ES,Brasil,0
+9,GO,Brasil,0
+10,MA,Brasil,0
+11,MG,Brasil,0
+12,MS,Brasil,0
+13,MT,Brasil,0
+14,PA,Brasil,0
+15,PB,Brasil,0
+16,PE,Brasil,0
+17,PI,Brasil,0
+18,PR,Brasil,0
+19,RJ,Brasil,0
+20,RN,Brasil,0
+21,RO,Brasil,0
+22,RS,Brasil,0
+23,SC,Brasil,0
+24,SE,Brasil,0
+25,SP,Brasil,0
+26,Monitoramento do fluxo de pessoas,AC,1
+27,Monitoramento do fluxo de pessoas,AL,1
+28,Monitoramento do fluxo de pessoas,AM,1
+29,Telemedicina,AM,1
+30,Identificação de pessoas,BA,1
+31,Monitoramento de temperatura,BA,1
+32,Monitoramento do fluxo de pessoas,BA,1
+33,Telemedicina,BA,1
+34,Telemedicina,BR,1
+35,Digitalização de serviços públicos,CE,1
+36,Fornecimento de informações,CE,2
+37,Monitoramento do fluxo de pessoas,CE,1
+38,Telemedicina,CE,2
+39,Fornecimento de informações,DF,1
+40,Monitoramento de temperatura,DF,1
+41,Monitoramento de uso de máscara,DF,1
+42,Monitoramento do fluxo de pessoas,DF,1
+43,Telemedicina,DF,1
+44,Fornecimento de informações,ES,1
+45,Monitoramento de temperatura,ES,2
+46,Monitoramento do fluxo de pessoas,ES,3
+47,Telemedicina,ES,1
+48,Monitoramento do fluxo de pessoas,GO,3
+49,Não informado,GO,2
+50,Telemedicina,GO,1
+51,Monitoramento do fluxo de pessoas,MA,1
+52,Mapeamento da evolução da COVID-19,MG,1
+53,Monitoramento do fluxo de pessoas,MG,1
+54,Telemedicina,MG,1
+55,Monitoramento do fluxo de pessoas,MS,1
+56,Rastreamento de contatos,MS,1
+57,Monitoramento do fluxo de pessoas,MT,1
+58,Monitoramento do fluxo de pessoas,PA,1
+59,Identificação de pessoas,PB,1
+60,Monitoramento de temperatura,PB,1
+61,Monitoramento do fluxo de pessoas,PB,1
+62,Telemedicina,PB,1
+63,Telemedicina,PE,1
+64,Monitoramento do fluxo de pessoas,PI,1
+65,Telemedicina,PI,2
+66,Fornecimento de informações,PR,1
+67,Monitoramento do fluxo de pessoas,PR,2
+68,Telemedicina,PR,3
+69,Digitalização de serviços públicos,RJ,1
+70,Fornecimento de informações,RJ,1
+71,Identificação de pessoas,RJ,1
+72,Telemedicina,RJ,4
+73,Monitoramento do fluxo de pessoas,RN,1
+74,Telemedicina,RN,2
+75,Monitoramento do fluxo de pessoas,RO,1
+76,Armazenamento,RS,1
+77,Mapeamento da evolução da COVID-19,RS,1
+78,Monitoramento do fluxo de pessoas,RS,2
+79,Telemedicina,RS,1
+80,Mapeamento da evolução da COVID-19,SC,5
+81,Monitoramento do fluxo de pessoas,SC,1
+82,Rastreamento de contatos,SC,2
+83,Telemedicina,SC,2
+84,Monitoramento do fluxo de pessoas,SE,2
+85,Telemedicina,SE,1
+86,Identificação de pessoas,SP,1
+87,Monitoramento de temperatura,SP,3
+88,Monitoramento do fluxo de pessoas,SP,9
+89,Rastreamento de contatos,SP,1
+90,Telemedicina,SP,2

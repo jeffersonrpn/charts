@@ -1,0 +1,49 @@
+____
+FUNÇÕES DE PRODUTOS POR MUNICÍPIO E FORNECEDOR 
+
+Monitoramento do fluxo de pessoas #f73848
+Telemedicina #de4d4a
+temperatura corporal #f57f4e
+evolução da COVID-19 #f5a034
+Rastreamento de contatos #fed382
+Fornecimento de informações #edd391
+Identificação de pessoas #fee1d4
+Digitalização de serviços públicos #edfdb6
+uso de máscara #ffffff
+não informado #3d60d9
+armazenamento #9fe79f
+
+campinas....#f7faaf
+goiás... #9fe79f
+três cachoeiras...#5dc8ea
+cascavel....#3d60d9
+nova iguaçu.... #8553a4
+
+
+____
+TECNOLOGIA PARA COMBATER COVID-19 POR MUNICÍPIO
+são paulo #3d60d9
+rio de janeiro #87e089
+pernambuco #e6e6e6
+
+____
+por município 2
+são paulo #3d60d9
+campinas #5380ee
+
+
+## FUNÇÕES DE PRODUTOS POR ESTADO E FORNECEDOR
+
+Armazenamento #c7f64a
+Digitalização de serviços púBLICOS #1ebf70
+Fornecimento de INFORMAÇÕES #87e089
+Identificação de pessoas #7095f1
+evoluçÃO da covid-19 #755285
+temperatura corporal #dedab4
+uso de máscara #b7a1ff
+fluxo de pessoas #2e2f46
+rastreamento de contatos #87e0d4
+telemedicina #3d60d9
+
+estado #bababa, #d2d2d2
+
