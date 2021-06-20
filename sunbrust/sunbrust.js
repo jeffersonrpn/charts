@@ -1,5 +1,4 @@
 async function draw() {
-  const idAcessor = d => d.id;
   const nameAcessor = d => d.name;
   const parentAcessor = d => d.parent;
   const valueAcessor = d => +d.value;
@@ -52,9 +51,11 @@ async function draw() {
     .startAngle(d => d.x0)
     .endAngle(d => d.x1)
     .padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.005))
-    .padRadius(dimensions.radius * 5)
+    // .padRadius(dimensions.radius * 5)
+    .padRadius(0)
     .innerRadius(d => d.y0 * dimensions.radius)
-    .outerRadius(d => Math.max(d.y0 * dimensions.radius, d.y1 * dimensions.radius - 3))
+    // .outerRadius(d => Math.max(d.y0 * dimensions.radius, d.y1 * dimensions.radius - 3))
+    .outerRadius(d => Math.max(d.y0 * dimensions.radius, d.y1 * dimensions.radius));
 
   const wrapper = d3.select("#chart-sunbrust")
     .append("svg")
@@ -63,20 +64,6 @@ async function draw() {
 
   const bounds = wrapper.append("g")
     .attr("transform", `translate(${dimensions.width / 2}, ${dimensions.width / 2})`);
-
-  const tooltip = wrapper.append("foreignObject")
-    .attr("class", "chart-tooltip")
-    .attr("x", 60)
-    .attr("y", 0)
-    .attr("width", 150)
-    .attr("height", 100)
-    .style("display", "none");
-  const tooltipContent = tooltip.append('xhtml:div')
-    .attr("class", "chart-tooltip-content");
-  const tooltipTitle = tooltipContent.append('div')
-    .attr('class', 'chart-tooltip-title');
-  const tooltipBody = tooltipContent.append('div')
-    .attr('class', 'chart-tooltip-body');
 
   const path = bounds.append("g")
     .selectAll("path")
@@ -90,21 +77,38 @@ async function draw() {
       }
       return (i % 2) ? "#d2d2d2" : "#bababa";
     })
-    .attr("fill-opacity", 1)
+    .attr("stroke", "#ffffff")
+    .attr("stroke-width", 3)
     .attr("d", d => arc(d))
     .style("cursor", "pointer")
     .on("mouseover", (e, d) => {
       if (d.depth > 1) {
-        d3.selectAll(".arcos").style("opacity", 0.2);
-        d3.select("#arco-" + d.data.data.id).style("opacity", 1);
+        d3.selectAll(".arcos").attr("fill-opacity", 0.2);
+        d3.select("#arco-" + d.data.data.id).attr("fill-opacity", 1);
+        d3.select("#arco-" + d.parent.data.data.id).attr("fill-opacity", 1);
       } else {
-        d3.selectAll(".arcos").style("opacity", 0.2);
-        d3.selectAll(`.arcos-${d.data.data.name}`).style("opacity", 1);
-        d3.select("#arco-" + d.data.data.id).style("opacity", 1);
+        d3.selectAll(".arcos").attr("fill-opacity", 0.2);
+        d3.selectAll(`.arcos-${d.data.data.name}`).attr("fill-opacity", 1);
+        d3.select("#arco-" + d.data.data.id).attr("fill-opacity", 1);
       }
+      tooltip.style("display", null);
     })
-    .on("mouseout", (e, d) => {
-      d3.selectAll(".arcos").style("opacity", 1);
+    .on("mouseout", () => {
+      d3.selectAll(".arcos").attr("fill-opacity", 1);
+      tooltip.style("display", "none");
+    })
+    .on("mousemove", (event, d) => {
+      if (d.depth > 1) {
+        const xy = d3.pointer(event);
+        tooltipBody.html(`
+          ${d.data.data.name}<br>
+          ${d.parent.data.data.name}
+          <strong>${d.data.data.value}</strong>`);
+        tooltipTitle.style("background-color", color(d.data.data.name));
+        tooltip.attr("transform", `translate(${xy[0]}, ${xy[1]})`);
+      } else {
+        tooltip.style("display", "none");
+      }
     });
 
   path.append("title")
@@ -121,6 +125,38 @@ async function draw() {
     .attr("fill-opacity", d => +labelVisible(d))
     .attr("transform", d => labelTransform(d))
     .text(d => d.data.data.name);
+
+  const title = wrapper.append("text")
+    .attr("x", dimensions.width * 0.5)
+    .attr("y", dimensions.width * 0.5)
+    .attr("text-anchor", "middle")
+    .text("NAVEGUE");
+  const title2 = wrapper.append("text")
+    .attr("x", dimensions.width * 0.5)
+    .attr("y", (dimensions.width * 0.5) + 18)
+    .attr("text-anchor", "middle")
+    .text("POR ESTADO");
+
+    const tooltip = bounds.append("foreignObject")
+      .attr("class", "chart-tooltip")
+      .attr("x", 20)
+      .attr("y", 0)
+      .attr("width", 200)
+      .attr("height", 100)
+      .style("display", "none");
+    const tooltipContent = tooltip.append("xhtml:div")
+      .attr("class", "chart-tooltip-content")
+      .style("background-color", "#bababa")
+      .style("border", "solid 1px #000000")
+      .style("padding", "0.5rem")
+      .style("display", "flex");
+    const tooltipTitle = tooltipContent.append("div")
+      .attr("class", "chart-tooltip-title")
+      .style("width", "30px")
+      .style("height", "80px");
+    const tooltipBody = tooltipContent.append("div")
+      .attr("class", "chart-tooltip-body")
+      .style("margin-left", "0.5rem");
 
   function labelVisible(d) {
     if (d.depth > 1) {
