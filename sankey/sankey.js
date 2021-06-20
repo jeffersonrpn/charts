@@ -40,15 +40,42 @@ async function draw() {
     .extent([[1, 2], [dimensions.width - 1, dimensions.height - 5]]);
 
   const sankeyData = sankey(data);
-  // ["Centro-Oeste", "Nordeste", "Norte", "Sudeste", "Sul", ""]
-  const regioes = Array.from(d3.group(links, d => d.regiao).keys());
-  const funcoes = Array.from(d3.group(links, d => d.funcao).keys());
   const colorMunicipio = d3.scaleOrdinal()
-    .domain(regioes)
-    .range(["yellow", "cyan", "green", "blue", "tomato"]);
+    .domain([
+      "Centro-Oeste",
+      "Nordeste",
+      "Norte",
+      "Sudeste",
+      "Sul"
+    ]).range([
+      "#f7faaf",
+      "#9fe79f",
+      "#5dc8ea",
+      "#3d60d9",
+      "#8553a4"
+    ]);
   const colorFuncao = d3.scaleOrdinal()
-    .domain(funcoes)
-    .range(["yellow", "cyan", "green", "blue", "tomato"]);
+    .domain([
+      "Monitoramento do fluxo de pessoas",
+      "Telemedicina",
+      "Monitoramento de temperatura",
+      "Rastreamento de contatos",
+      "Identificação de pessoas",
+      "Fornecimento de informações",
+      "Mapeamento da evolução da COVID-19",
+      "Digitalização de serviços públicos",
+      "Monitoramento de uso de máscara"
+    ]).range([
+      "#f73848",
+      "#de4d4a",
+      "#f57f4e",
+      "#fed382",
+      "#fee1d4",
+      "#edd391",
+      "#f5a034",
+      "#edfdb6",
+      "#ffffff"
+    ]);
 
   const wrapper = d3.select("#chart-sankey")
     .append("svg")
