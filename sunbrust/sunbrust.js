@@ -188,6 +188,7 @@ async function draw() {
       } else {
         d3.selectAll(".arcos").attr("fill-opacity", 1);
         d3.selectAll(".chart-sunbrust-nav-item").style("opacity", 1);
+        currentProductSelected = "";
       }
     });
 
