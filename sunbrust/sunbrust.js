@@ -7,6 +7,8 @@ async function draw() {
     width: 800
   }
   dimensions.radius = dimensions.width / 7;
+  const offOpacity = 0.1;
+  let currentProductSelected = "";
 
   const rawData = await d3.csv("data2.csv");
   const data = d3.stratify()
@@ -21,19 +23,15 @@ async function draw() {
   const root = d3.partition()
     .size([2 * Math.PI, hierarchy.height + 1])(hierarchy);
 
-  const color = d3.scaleOrdinal().domain([
-    "Armazenamento",
-    "Digitalização de serviços públicos",
-    "Fornecimento de informações",
-    "Identificação de pessoas",
-    "Mapeamento da evolução da COVID-19",
-    "Monitoramento de temperatura",
-    "Monitoramento de uso de máscara",
-    "Monitoramento do fluxo de pessoas",
-    "Rastreamento de contatos",
-    "Telemedicina",
-    "Não informado",
-  ]).range([
+  const produtos = Array.from(
+    d3.group(rawData.filter(d => d.parent != "Brasil" && d.name != "Brasil"),
+      d => d.name).keys());
+  produtos.sort((a, b) => {
+    if (a < b) { return -1; }
+    if (a > b) { return 1; }
+    return 0;
+  });
+  const color = d3.scaleOrdinal().domain(produtos).range([
     "#c7f64a",
     "#1ebf70",
     "#87e089",
@@ -42,9 +40,22 @@ async function draw() {
     "#dedab4",
     "#b7a1ff",
     "#2e2f46",
+    "#ffffff",
     "#87e0d4",
-    "#3d60d9",
-    "blue"
+    "#3d60d9"
+  ]);
+  const colorText = d3.scaleOrdinal().domain(produtos).range([
+    "#000000",
+    "#000000",
+    "#000000",
+    "#ffffff",
+    "#ffffff",
+    "#000000",
+    "#000000",
+    "#ffffff",
+    "#000000",
+    "#000000",
+    "#ffffff"
   ]);
 
   const arc = d3.arc()
@@ -70,7 +81,7 @@ async function draw() {
     .data(root.descendants().slice(1))
     .join("path")
     .attr("id", d => `arco-${d.data.data.id}`)
-    .attr("class", d => `arcos arcos-${d.data.data.parent}`)
+    .attr("class", d => `arcos arcos-${d.data.data.parent} arcos-${getProductClass(d.data.data.name)}`)
     .attr("fill", (d, i) => {
       if (d.depth > 1) {
         return color(d.data.data.name);
@@ -83,11 +94,11 @@ async function draw() {
     .style("cursor", "pointer")
     .on("mouseover", (e, d) => {
       if (d.depth > 1) {
-        d3.selectAll(".arcos").attr("fill-opacity", 0.2);
+        d3.selectAll(".arcos").attr("fill-opacity", offOpacity);
         d3.select("#arco-" + d.data.data.id).attr("fill-opacity", 1);
         d3.select("#arco-" + d.parent.data.data.id).attr("fill-opacity", 1);
       } else {
-        d3.selectAll(".arcos").attr("fill-opacity", 0.2);
+        d3.selectAll(".arcos").attr("fill-opacity", offOpacity);
         d3.selectAll(`.arcos-${d.data.data.name}`).attr("fill-opacity", 1);
         d3.select("#arco-" + d.data.data.id).attr("fill-opacity", 1);
       }
@@ -137,26 +148,48 @@ async function draw() {
     .attr("text-anchor", "middle")
     .text("POR ESTADO");
 
-    const tooltip = bounds.append("foreignObject")
-      .attr("class", "chart-tooltip")
-      .attr("x", 20)
-      .attr("y", 0)
-      .attr("width", 200)
-      .attr("height", 100)
-      .style("display", "none");
-    const tooltipContent = tooltip.append("xhtml:div")
-      .attr("class", "chart-tooltip-content")
-      .style("background-color", "#bababa")
-      .style("border", "solid 1px #000000")
-      .style("padding", "0.5rem")
-      .style("display", "flex");
-    const tooltipTitle = tooltipContent.append("div")
-      .attr("class", "chart-tooltip-title")
-      .style("width", "30px")
-      .style("height", "80px");
-    const tooltipBody = tooltipContent.append("div")
-      .attr("class", "chart-tooltip-body")
-      .style("margin-left", "0.5rem");
+  const tooltip = bounds.append("foreignObject")
+    .attr("class", "chart-tooltip")
+    .attr("x", 20)
+    .attr("y", 0)
+    .attr("width", 200)
+    .attr("height", 100)
+    .style("display", "none");
+  const tooltipContent = tooltip.append("xhtml:div")
+    .attr("class", "chart-tooltip-content")
+    .style("background-color", "#bababa")
+    .style("border", "solid 1px #000000")
+    .style("padding", "0.5rem")
+    .style("display", "flex");
+  const tooltipTitle = tooltipContent.append("div")
+    .attr("class", "chart-tooltip-title")
+    .style("width", "30px")
+    .style("height", "80px");
+  const tooltipBody = tooltipContent.append("div")
+    .attr("class", "chart-tooltip-body")
+    .style("margin-left", "0.5rem");
+
+  const nav = d3.select("#chart-sunbrust-nav")
+    .selectAll("div")
+    .data(produtos)
+    .join("div")
+    .append("button")
+    .attr("class", d => `chart-sunbrust-nav-item button-${getProductClass(d)}`)
+    .style("background-color", d => color(d))
+    .style("color", d => colorText(d))
+    .html(d => d)
+    .on("click", (e, d) => {
+      if (currentProductSelected !== d) {
+        d3.selectAll(".arcos").attr("fill-opacity", offOpacity);
+        d3.selectAll(".chart-sunbrust-nav-item").style("opacity", offOpacity);
+        d3.selectAll(`.arcos-${getProductClass(d)}`).attr("fill-opacity", 1);
+        d3.selectAll(`.button-${getProductClass(d)}`).style("opacity", 1);
+        currentProductSelected = d;
+      } else {
+        d3.selectAll(".arcos").attr("fill-opacity", 1);
+        d3.selectAll(".chart-sunbrust-nav-item").style("opacity", 1);
+      }
+    });
 
   function labelVisible(d) {
     if (d.depth > 1) {
@@ -169,6 +202,10 @@ async function draw() {
     const x = (d.x0 + d.x1) / 2 * 180 / Math.PI;
     const y = (d.y0 + d.y1) / 2 * dimensions.radius;
     return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
+  }
+
+  function getProductClass(p) {
+    return p.replace(/ /g, "-");
   }
 
 }
