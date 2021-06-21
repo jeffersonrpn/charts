@@ -13,11 +13,25 @@ async function draw() {
   }
   dimensions.wrapperWidth = dimensions.width + dimensions.margin.left + dimensions.margin.right;
   dimensions.wrapperHeight = dimensions.height + dimensions.margin.top + dimensions.margin.top;
+  const offOpacity = 0.1;
+  const onOpacity = 0.8;
 
   const links = await d3.csv("data3.csv");
   links.map(l => {
     l.value = +l.value;
     l.count = +l.count;
+  });
+  const ufs = Array.from(d3.group(links.filter(d => d.uf != ""), d => d.uf).keys());
+  const products = Array.from(d3.group(links.filter(d => d.funcao != ""), d => d.funcao).keys());
+  ufs.sort((a, b) => {
+    if (a < b) { return -1; }
+    if (a > b) { return 1; }
+    return 0;
+  });
+  products.sort((a, b) => {
+    if (a < b) { return -1; }
+    if (a > b) { return 1; }
+    return 0;
   });
   const nodes = Array.from(new Set(links.flatMap(l => [l.source, l.target])),
     name => ({
@@ -95,13 +109,12 @@ async function draw() {
     .attr("height", d => d.y1 - d.y0)
     .attr("width", d => d.x1 - d.x0)
     .attr("fill", d => (d.x0 > 20 && d.x0 < dimensions.width - 20) ? "#ffffff" : "none")
-    // .attr("fill", "#ffffff")
     .append("title")
     .text(d => `${d.name}\n${d.value}`);
 
   const link = bounds.append("g")
     .attr("fill", "none")
-    .attr("stroke-opacity", 0.8)
+    .attr("stroke-opacity", onOpacity)
     .selectAll("g")
     .data(sankeyData.links)
     .join("g");
@@ -117,14 +130,14 @@ async function draw() {
     })
     .attr("stroke-width", d => Math.max(1, d.width))
     .attr("id", d => "link" + d.index)
-    .attr("class", "sankey-link")
-    .on("mouseover", (event, element) => {
-      d3.selectAll(".sankey-link").attr("stroke-opacity", 0.8)
-      d3.select("#link" + element.index).attr("stroke-opacity", 1)
-    })
-    .on("mouseout", () => {
-      d3.selectAll(".sankey-link").attr("stroke-opacity", 0.8)
-    });
+    .attr("class", d => `sankey-link link-${d.uf} link-${removeBlank(d.funcao)}`);
+  // .on("mouseover", (event, element) => {
+  //   d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
+  //   d3.select("#link" + element.index).attr("stroke-opacity", 1);
+  // })
+  // .on("mouseout", () => {
+  //   d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
+  // });
 
   link.append("title")
     .text(d => `${d.source.name} → ${d.target.name}\n${d.value}`);
@@ -153,6 +166,38 @@ async function draw() {
     })
     .text(d => d.name);
 
+  d3.select("#filter-uf")
+    .selectAll("option")
+    .data(ufs)
+    .enter()
+    .append("option")
+    .attr("value", d => d)
+    .html(d => d);
+
+  d3.select("#filter-product")
+    .selectAll("option")
+    .data(products)
+    .enter()
+    .append("option")
+    .attr("value", d => d)
+    .html(d => d);
+
+  d3.select("#filter-uf").on("change", (e) => {
+    const uf = d3.select("#filter-uf").property("value");
+    d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
+    d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
+  });
+
+  d3.select("#filter-product").on("change", (e) => {
+    const product = d3.select("#filter-product").property("value");
+    d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
+    d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+  });
+
+  d3.select("#filter-clear").on("click", (e) => {
+    d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
+  });
+
   function dragmove(d) {
     console.log("passou");
     d3.select(this)
@@ -164,6 +209,10 @@ async function draw() {
         ) + ")");
     sankey.relayout();
     link.attr("d", sankey.link());
+  }
+
+  function removeBlank(p) {
+    return p.replace(/ /g, "-");
   }
 
 }
