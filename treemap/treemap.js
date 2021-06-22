@@ -26,6 +26,7 @@ async function draw() {
     .parentId(d => d.parent)(data);
   root.sum(d => +d.value);
   root.sort((a, b) => b.value - a.value);
+
   const treemap = d3.treemap()
     .tile(tile)(root);
 
@@ -40,7 +41,30 @@ async function draw() {
     node
       .filter(d => d === root ? d.parent : d.children)
       .attr("cursor", "pointer")
-      .on("click", (event, d) => d === root ? zoomout(root) : zoomin(d));
+      .on("click", (event, d) => {
+        tooltip.style("display", "none");
+        if (d === root) {
+          zoomout(root);
+        } else {
+          zoomin(d);
+        }
+      })
+      .on("mouseover", () => {
+        tooltip.style("display", null);
+      })
+      .on("mousemove", (event, d) => {
+        const xy = d3.pointer(event);
+        let xt = xy[0] + x(d.x0);
+        if (xt > width * 0.5) {
+          xt -= 240;
+        }
+        let yt = xy[1] + y(d.y0);
+        if (yt > height * 0.9) {
+          yt -= 30;
+        }
+        tooltipBody.html(d.children.map(d => `${d.data.desc} <strong>${d.data.value}</strong>`).join("<br>"));
+        tooltip.attr("transform", `translate(${xt}, ${yt})`);
+      });
 
     // node.append("title")
     //   .text(d => `${name(d)}\n${d.data.value}`);
@@ -88,50 +112,67 @@ async function draw() {
       .text(d => d.value);
 
     group.call(position, root);
+  }
+  
+  const tooltip = svg.append("foreignObject")
+    .attr("class", "chart-tooltip")
+    .attr("x", 20)
+    .attr("y", 0)
+    .attr("width", 200)
+    .attr("height", 400)
+    .style("display", "none");
+  const tooltipContent = tooltip.append("xhtml:div")
+    .attr("class", "chart-tooltip-content")
+    .style("background-color", "#bababa")
+    .style("border", "solid 1px #000000")
+    .style("padding", "0.5rem")
+    .style("display", "flex");
+  const tooltipBody = tooltipContent.append("div")
+    .attr("class", "chart-tooltip-body")
+    .style("margin-left", "0.5rem");
 
-    function name(d) {
-      return d.ancestors().reverse().map(d => d.data.desc).join("/");
-    }
+  function name(d) {
+    return d.ancestors().reverse().map(d => d.data.desc).join("/");
+  }
 
-    function position(group, root) {
-      group.selectAll("g")
-        .attr("transform", d => d === root ? `translate(0,-30)` : `translate(${x(d.x0)},${y(d.y0)})`)
-        .select("rect")
-        .attr("width", d => d === root ? width : x(d.x1) - x(d.x0))
-        .attr("height", d => d === root ? 30 : y(d.y1) - y(d.y0));
-    }
+  function position(group, root) {
+    group.selectAll("g")
+      .attr("transform", d => d === root ? `translate(0,-30)` : `translate(${x(d.x0)},${y(d.y0)})`)
+      .select("rect")
+      .attr("width", d => d === root ? width : x(d.x1) - x(d.x0))
+      .attr("height", d => d === root ? 30 : y(d.y1) - y(d.y0));
+  }
 
-    function zoomin(d) {
-      const group0 = group.attr("pointer-events", "none");
-      const group1 = group = svg.append("g").call(render, d);
+  function zoomin(d) {
+    const group0 = group.attr("pointer-events", "none");
+    const group1 = group = svg.append("g").call(render, d);
 
-      x.domain([d.x0, d.x1]);
-      y.domain([d.y0, d.y1]);
+    x.domain([d.x0, d.x1]);
+    y.domain([d.y0, d.y1]);
 
-      svg.transition()
-        .duration(750)
-        .call(t => group0.transition(t).remove()
-          .call(position, d.parent))
-        .call(t => group1.transition(t)
-          .attrTween("opacity", () => d3.interpolate(0, 1))
-          .call(position, d));
-    }
+    svg.transition()
+      .duration(750)
+      .call(t => group0.transition(t).remove()
+        .call(position, d.parent))
+      .call(t => group1.transition(t)
+        .attrTween("opacity", () => d3.interpolate(0, 1))
+        .call(position, d));
+  }
 
-    function zoomout(d) {
-      const group0 = group.attr("pointer-events", "none");
-      const group1 = group = svg.insert("g", "*").call(render, d.parent);
+  function zoomout(d) {
+    const group0 = group.attr("pointer-events", "none");
+    const group1 = group = svg.insert("g", "*").call(render, d.parent);
 
-      x.domain([d.parent.x0, d.parent.x1]);
-      y.domain([d.parent.y0, d.parent.y1]);
+    x.domain([d.parent.x0, d.parent.x1]);
+    y.domain([d.parent.y0, d.parent.y1]);
 
-      svg.transition()
-        .duration(750)
-        .call(t => group0.transition(t).remove()
-          .attrTween("opacity", () => d3.interpolate(1, 0))
-          .call(position, d))
-        .call(t => group1.transition(t)
-          .call(position, d.parent));
-    }
+    svg.transition()
+      .duration(750)
+      .call(t => group0.transition(t).remove()
+        .attrTween("opacity", () => d3.interpolate(1, 0))
+        .call(position, d))
+      .call(t => group1.transition(t)
+        .call(position, d.parent));
   }
 }
 draw();
