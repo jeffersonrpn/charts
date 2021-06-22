@@ -1,0 +1,26 @@
+id,name,parent,value
+1,Brasil,,
+2,SP,Brasil,0
+3,RJ,Brasil,15
+4,SC,Brasil,15
+5,PR,Brasil,14
+6,RS,Brasil,10
+7,MG,Brasil,9
+8,GO,Brasil,7
+9,PE,Brasil,7
+10,PB,Brasil,5
+11,SE,Brasil,4
+12,BA,Brasil,3
+13,PI,Brasil,3
+14,AM,Brasil,2
+15,MS,Brasil,2
+16,AC,Brasil,1
+17,AL,Brasil,1
+18,TO,Brasil,1
+19,AP,Brasil,1
+20,CE,Brasil,1
+21,DF,Brasil,1
+22,ES,Brasil,1
+23,RN,Brasil,1
+24,RO,Brasil,1
+25,São Paulo,SP,26

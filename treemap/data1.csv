@@ -1,0 +1,102 @@
+id,name,desc,parent,value
+1,Brasil,Brasil,,
+2,AC,Acre,Brasil,0
+3,AL,Alagoas,Brasil,0
+4,AM,Amazonas,Brasil,0
+5,AP,Amapá,Brasil,0
+6,BA,Bahia,Brasil,0
+7,CE,Ceará,Brasil,0
+8,DF,Distrito Federal,Brasil,0
+9,ES,Espírito Santo,Brasil,0
+10,GO,Goiás,Brasil,0
+11,MG,Minas Gerais,Brasil,0
+12,MS,Mato Grosso do Sul,Brasil,0
+13,PB,Paraíba,Brasil,0
+14,PE,Pernambuco,Brasil,0
+15,PI,Piauí,Brasil,0
+16,PR,Paraná,Brasil,0
+17,RJ,Rio de Janeiro,Brasil,0
+18,RN,Rio Grande do Norte,Brasil,0
+19,RO,Roraima,Brasil,0
+20,RS,Rio Grande do Sul,Brasil,0
+21,SC,Santa Catarina,Brasil,0
+22,SE,Sergipe,Brasil,0
+23,SP,São Paulo,Brasil,0
+24,TO,Tocantins,Brasil,0
+25,Rio Branco,Rio Branco,AC,1
+26,Maceió,Maceió,AL,1
+27,Macapá,Macapá,AP,1
+28,Vitória da Conquista,Vitória da Conquista,BA,1
+29,Fortaleza,Fortaleza,CE,1
+30,Brasília,Brasília,DF,1
+31,Cachoeiro de Itapemirim,Cachoeiro de Itapemirim,ES,1
+32,Caldas Novas,Caldas Novas,GO,1
+33,Betim,Betim,MG,1
+34,Itajubá,Itajubá,MG,1
+35,Juiz de Fora,Juiz de Fora,MG,1
+36,Varginha,Varginha,MG,1
+37,Campina Grande,Campina Grande,PB,1
+38,Caruaru,Caruaru,PE,1
+39,Jaboatão dos Guararapes,Jaboatão dos Guararapes,PE,1
+40,Cascavel,Cascavel,PR,1
+41,Fazenda Rio Grande,Fazenda Rio Grande,PR,1
+42,Maringá,Maringá,PR,1
+43,Pinhais,Pinhais,PR,1
+44,Ponta Grossa,Ponta Grossa,PR,1
+45,Umuarama,Umuarama,PR,1
+46,Campos dos Goytacazes,Campos dos Goytacazes,RJ,1
+47,Macaé,Macaé,RJ,1
+48,Maricá,Maricá,RJ,1
+49,Niterói,Niterói,RJ,1
+50,Nova Iguaçu,Nova Iguaçu,RJ,1
+51,São João da Barra,São João da Barra,RJ,1
+52,São Leopoldo,São Leopoldo,RJ,1
+53,Volta Redonda,Volta Redonda,RJ,1
+54,Parnamirim,Parnamirim,RN,1
+55,Porto Velho,Porto Velho,RO,1
+56,Alegrete,Alegrete,RS,1
+57,Ijuí,Ijuí,RS,1
+58,Mampituba,Mampituba,RS,1
+59,Rio Grande,Rio Grande,RS,1
+60,Sapiranga,Sapiranga,RS,1
+61,Três Cachoeiras,Três Cachoeiras,RS,1
+62,Blumenau,Blumenau,SC,1
+63,Brusque,Brusque,SC,1
+64,Governador Celso Ramos,Governador Celso Ramos,SC,1
+65,Passo de Torres,Passo de Torres,SC,1
+66,Bauru,Bauru,SP,1
+67,Jacareí,Jacareí,SP,1
+68,Santa Isabel,Santa Isabel,SP,1
+69,Santana de Parnaíba,Santana de Parnaíba,SP,1
+70,Santos,Santos,SP,1
+71,São Caetano do Sul,São Caetano do Sul,SP,1
+72,São Carlos,São Carlos,SP,1
+73,São Sebastião,São Sebastião,SP,1
+74,Sorocaba,Sorocaba,SP,1
+75,Araguaína,Araguaína,TO,1
+76,Manaus,Manaus,AM,2
+77,Salvador,Salvador,BA,2
+78,Luziânia,Luziânia,GO,2
+79,Governador Valadares,Governador Valadares,MG,2
+80,Campo Grande,Campo Grande,MS,2
+81,Foz do Iguaçu,Foz do Iguaçu,PR,2
+82,Teresópolis,Teresópolis,RJ,2
+83,Balneário Camboriú,Balneário Camboriú,SC,2
+84,Itajaí,Itajaí,SC,2
+85,Jaraguá do Sul,Jaraguá do Sul,SC,2
+86,Tubarão,Tubarão,SC,2
+87,Santo André,Santo André,SP,2
+88,Belo Horizonte,Belo Horizonte,MG,3
+89,Teresina,Teresina,PI,3
+90,Curitiba,Curitiba,PR,3
+91,São José dos Pinhais,São José dos Pinhais,PR,3
+92,Florianópolis,Florianópolis,SC,3
+93,Guarulhos,Guarulhos,SP,3
+94,Aparecida de Goiânia,Aparecida de Goiânia,GO,4
+95,João Pessoa,João Pessoa,PB,4
+96,Porto Alegre,Porto Alegre,RS,4
+97,Aracaju,Aracaju,SE,4
+98,Recife,Recife,PE,5
+99,Rio de Janeiro,Rio de Janeiro,RJ,5
+100,Campinas,Campinas,SP,6
+101,São Paulo,São Paulo,SP,6
