@@ -42,30 +42,50 @@ async function draw() {
       .attr("cursor", "pointer")
       .on("click", (event, d) => d === root ? zoomout(root) : zoomin(d));
 
-    node.append("title")
-      .text(d => `${name(d)}\n${d.data.value}`);
-
+    // node.append("title")
+    //   .text(d => `${name(d)}\n${d.data.value}`);
     node.append("rect")
       .attr("id", d => d.data.id)
-      .attr("fill", d => d === root ? "#fff" : d.children ? "#ccc" : "#ddd")
-      .attr("stroke", "#fff");
+      .attr("fill", (d) => {
+        if (d === root) {
+          return "#3d60d9";
+        } else if (d.data.id % 2) {
+          return "#3d60d9";
+        }
+        return "#87e089";
+        // d === root ?  : d.children ? "#3d60d9" : "#ddd"
+      })
+      .attr("stroke", "#030420")
+      .attr("stroke-width", d => d === root ? 2 : d.children ? 2 : 4);
 
-    node.append("clipPath")
-      .attr("id", d => `clip-${d.data.id}`)
-      .append("use")
+    // node.append("clipPath")
+    //   .attr("id", d => `clip-${d.data.id}`)
+    //   .append("use")
     // .attr("xlink:href", d => d.leafUid.href);
 
+    // node.append("text")
+    //   .attr("clip-path", d => `clip-${d.data.id}`)
+    //   .attr("font-weight", d => d === root ? "bold" : null)
+    //   .selectAll("tspan")
+    //   .data(d => (d === root ? name(d) : d.data.desc).split(/(?=[A-Z][^A-Z])/g).concat(d.value))
+    //   .join("tspan")
+    //   .attr("x", 3)
+    //   .attr("y", (d, i, nodes) => `${(i === nodes.length - 1) * 0.3 + 1.1 + i * 0.9}em`)
+    //   .attr("fill-opacity", (d, i, nodes) => i === nodes.length - 1 ? 0.7 : null)
+    //   .attr("font-weight", (d, i, nodes) => i === nodes.length - 1 ? "normal" : null)
+    //   .text(d => d);
     node.append("text")
-      .attr("clip-path", d => `clip-${d.data.id}`)
-      .attr("font-weight", d => d === root ? "bold" : null)
-      .selectAll("tspan")
-      .data(d => (d === root ? name(d) : d.data.desc).split(/(?=[A-Z][^A-Z])/g).concat(d.value))
-      .join("tspan")
-      .attr("x", 3)
-      .attr("y", (d, i, nodes) => `${(i === nodes.length - 1) * 0.3 + 1.1 + i * 0.9}em`)
-      .attr("fill-opacity", (d, i, nodes) => i === nodes.length - 1 ? 0.7 : null)
-      .attr("font-weight", (d, i, nodes) => i === nodes.length - 1 ? "normal" : null)
-      .text(d => d);
+      .attr("x", 10)
+      .attr("y", d => (d === root ? 20 : 25))
+      .attr("fill", "#ffffff")
+      .text(d => (d === root ? name(d) : d.data.desc));
+    node
+      .filter(d => d !== root)
+      .append("text")
+      .attr("x", 10)
+      .attr("y", 45)
+      .attr("fill", "#ffffff")
+      .text(d => d.value);
 
     group.call(position, root);
 
