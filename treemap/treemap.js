@@ -1,7 +1,7 @@
 async function draw() {
 
   const width = 800;
-  const height = 800;
+  const height = 750;
 
   const x = d3.scaleLinear().rangeRound([0, width]);
   const y = d3.scaleLinear().rangeRound([0, height]);
@@ -52,17 +52,20 @@ async function draw() {
       .on("mouseover", () => {
         tooltip.style("display", null);
       })
+      .on("mouseout", () => {
+        tooltip.style("display", "none");
+      })
       .on("mousemove", (event, d) => {
         const xy = d3.pointer(event);
         let xt = xy[0] + x(d.x0);
         if (xt > width * 0.5) {
-          xt -= 240;
+          xt -= 280;
         }
         let yt = xy[1] + y(d.y0);
-        if (yt > height * 0.9) {
-          yt -= 30;
+        if (yt > height * 0.7) {
+          yt -= 120;
         }
-        tooltipBody.html(d.children.map(d => `${d.data.desc} <strong>${d.data.value}</strong>`).join("<br>"));
+        tooltipBody.html(d.children.map(d => `${d.data.desc} <strong style="text-decoration: underline;">${d.data.value}</strong>`).join("<br>"));
         tooltip.attr("transform", `translate(${xt}, ${yt})`);
       });
 
@@ -101,6 +104,7 @@ async function draw() {
     node.append("text")
       .attr("x", 10)
       .attr("y", d => (d === root ? 20 : 25))
+      .attr("font-size", d => (x(d.x1) - x(d.x0) > 120) ? "1.2rem" : "0.8rem")
       .attr("fill", "#ffffff")
       .text(d => (d === root ? name(d) : d.data.desc));
     node
@@ -108,31 +112,49 @@ async function draw() {
       .append("text")
       .attr("x", 10)
       .attr("y", 45)
+      .attr("font-size", d => (x(d.x1) - x(d.x0) > 120) ? "1.2rem" : "0.8rem")
+      .attr("font-family", "informative-bold")
+      .attr("text-decoration", "underline")
       .attr("fill", "#ffffff")
       .text(d => d.value);
+    node
+      .filter(d => d === root)
+      .append("text")
+      .attr("x", width - 20)
+      .attr("y", 20)
+      .attr("font-size", "1.2rem")
+      .attr("font-family", "informative-bold")
+      .attr("fill", "#ffffff")
+      .attr("opacity", d => (d.depth > 0) ? "1" : "0")
+      .text("X");
 
     group.call(position, root);
   }
-  
+
   const tooltip = svg.append("foreignObject")
     .attr("class", "chart-tooltip")
     .attr("x", 20)
     .attr("y", 0)
-    .attr("width", 200)
+    .attr("width", 250)
     .attr("height", 400)
     .style("display", "none");
   const tooltipContent = tooltip.append("xhtml:div")
     .attr("class", "chart-tooltip-content")
-    .style("background-color", "#bababa")
+    .style("background-color", "#cccccc")
     .style("border", "solid 1px #000000")
-    .style("padding", "0.5rem")
-    .style("display", "flex");
+    .style("padding", "1rem");
   const tooltipBody = tooltipContent.append("div")
-    .attr("class", "chart-tooltip-body")
-    .style("margin-left", "0.5rem");
+    .attr("class", "chart-tooltip-body");
+  tooltipContent.append("div")
+    .attr("class", "chart-tooltip-footer")
+    .style("padding-top", "1rem")
+    .style("font-family", "informative-bold")
+    .style("font-size", "0.8rem")
+    .style("color", "#3d60d9")
+    .html(`CLIQUE PARA EXPANDIR`);
 
   function name(d) {
-    return d.ancestors().reverse().map(d => d.data.desc).join("/");
+    return d.ancestors().reverse().splice(1).map(d => d.data.desc).join("/");
   }
 
   function position(group, root) {
