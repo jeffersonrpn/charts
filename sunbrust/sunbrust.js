@@ -40,7 +40,6 @@ async function draw() {
     "#dedab4",
     "#b7a1ff",
     "#2e2f46",
-    "#ffffff",
     "#87e0d4",
     "#3d60d9"
   ]);
@@ -53,7 +52,6 @@ async function draw() {
     "#000000",
     "#000000",
     "#ffffff",
-    "#000000",
     "#000000",
     "#ffffff"
   ]);
@@ -102,10 +100,14 @@ async function draw() {
         d3.selectAll(`.arcos-${d.data.data.name}`).attr("fill-opacity", 1);
         d3.select("#arco-" + d.data.data.id).attr("fill-opacity", 1);
       }
+      d3.selectAll(".chart-sunbrust-nav-item").style("opacity", 1);
+      currentProductSelected = "";
       tooltip.style("display", null);
     })
     .on("mouseout", () => {
       d3.selectAll(".arcos").attr("fill-opacity", 1);
+      d3.selectAll(".chart-sunbrust-nav-item").style("opacity", 1);
+      currentProductSelected = "";
       tooltip.style("display", "none");
     })
     .on("mousemove", (event, d) => {
@@ -114,7 +116,7 @@ async function draw() {
         tooltipBody.html(`
           ${d.data.data.name}<br>
           ${d.parent.data.data.name}
-          <strong>${d.data.data.value}</strong>`);
+          <span class="text-underline">${d.data.data.value}</span>`);
         tooltipTitle.style("background-color", color(d.data.data.name));
         tooltip.attr("transform", `translate(${xy[0]}, ${xy[1]})`);
       } else {
@@ -122,8 +124,8 @@ async function draw() {
       }
     });
 
-  path.append("title")
-    .text(d => `${d.ancestors().map(d => d.data.data.name).reverse().join("/")}\n${d.value}`);
+  // path.append("title")
+  //   .text(d => `${d.ancestors().map(d => d.data.data.name).reverse().join("/")}\n${d.value}`);
 
   const label = bounds.append("g")
     .attr("pointer-events", "none")
@@ -135,17 +137,20 @@ async function draw() {
     .attr("dy", "0.35em")
     .attr("fill-opacity", d => +labelVisible(d))
     .attr("transform", d => labelTransform(d))
+    .attr("font-family", "informative-bold")
     .text(d => d.data.data.name);
 
   const title = wrapper.append("text")
     .attr("x", dimensions.width * 0.5)
     .attr("y", dimensions.width * 0.5)
     .attr("text-anchor", "middle")
+    .attr("font-family", "informative-bold")
     .text("NAVEGUE");
   const title2 = wrapper.append("text")
     .attr("x", dimensions.width * 0.5)
     .attr("y", (dimensions.width * 0.5) + 18)
     .attr("text-anchor", "middle")
+    .attr("font-family", "informative-bold")
     .text("POR ESTADO");
 
   const tooltip = bounds.append("foreignObject")

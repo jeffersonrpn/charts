@@ -16,38 +16,69 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
     <style>
-    html,
-    body {
-      background-color: #ffffff;
-    }
+      @font-face {
+        font-family: 'informative';
+        src: url("../fonts/informative-regular.otf") format("opentype");
+      }
+  
+      @font-face {
+        font-family: 'informative-bold';
+        font-weight: bold;
+        src: url("../fonts/informative-bold.otf") format("opentype");
+      }
+  
+      html,
+      body {
+        font-family: "informative", sans-serif;
+        background-color: #ffffff;
+      }
 
-    .sunbrust {
-      display: flex;
-    }
+      .text {
+        font-family: "informative";
+      }
 
-    .sunbrust-nav {
-      width: 470px;
-      display: flex;
-      align-items: center;
-    }
+      .text-bold {
+        font-family: "informative-bold";
+      }
 
-    #chart-sunbrust {
-      width: 100%;
-    }
+      .text-underline {
+        font-family: "informative-bold";
+        text-decoration: underline;
+      }
 
-    .chart-sunbrust-nav-item {
-      padding: 0.25rem 0.5rem 0.25rem 1.5rem;
-      margin: 0.5rem 0;
-      border:none;
-      cursor: pointer;
-    }
+      .sunbrust {
+        display: flex;
+      }
+
+      .sunbrust-nav {
+        width: 470px;
+        display: flex;
+        align-items: center;
+      }
+
+      #chart-sunbrust {
+        width: 100%;
+      }
+
+      .chart-sunbrust-nav-item {
+        font-family: "informative";
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+        margin: 0.5rem 0;
+        border:none;
+        cursor: pointer;
+      }
+      .nav-title {
+        margin-bottom: 3rem;
+      }
   </style>
   </head>
   <body>
     <div class="sunbrust">
       <div class="sunbrust-nav">
         <div>
-          NAVEGUE POR PRODUTO
+          <div class="nav-title text-bold">NAVEGUE POR PRODUTO</div>
           <div id="chart-sunbrust-nav"></div>
         </div>
       </div>
