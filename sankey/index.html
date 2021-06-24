@@ -9,40 +9,83 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js" integrity="sha512-cd6CHE+XWDQ33ElJqsi0MdNte3S+bQY819f7p3NUHgwQQLXSKjE4cPZTeGNI+vaxZynk1wVU3hoHmow3m089wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <style>
+    @font-face {
+      font-family: 'informative';
+      src: url("../fonts/informative-regular.otf") format("opentype");
+    }
+
+    @font-face {
+      font-family: 'informative-bold';
+      font-weight: bold;
+      src: url("../fonts/informative-bold.otf") format("opentype");
+    }
+
     html,
     body {
       background-color: #030420;
     }
 
+    .chart-wrapper {
+      font-family: "informative", sans-serif;
+      text-transform: uppercase;
+      padding-top: 2rem;
+    }
+
+    .text-uppercase {
+      font-family: "informative";
+      text-transform: uppercase;
+    }
+
+    .text-bold {
+      font-family: "informative-bold";
+    }
+
+    .text-underline {
+      font-family: "informative-bold";
+      text-decoration: underline;
+    }
+
     .sankey-filter {
       display: flex;
       justify-content: center;
+      align-items: center;
+    }
+
+    .sankey-select {
+      margin-right: 2rem;
+      padding: 0.5rem;
+      border: none;
     }
 
     .sankey-clear-filter {
       border: none;
       background: none;
       color: #ffffff;
+      cursor: pointer;
     }
+
+    .san
   </style>
 </head>
 <body>
-  <div class="sankey-filter">
-    <div>
-      <select name="filter-uf" id="filter-uf">
-        <option value="--">Filtrar por Estado</option>
-      </select>
+  <div class="chart-wrapper">
+    <div class="sankey-filter">
+      <div>
+        <select name="filter-uf" id="filter-uf" class="sankey-select text-uppercase">
+          <option value="--">Filtrar por Estado</option>
+        </select>
+      </div>
+      <div>
+        <select name="filter-product" id="filter-product" class="sankey-select text-uppercase">
+          <option value="--">Filtrar por Produto</option>
+        </select>
+      </div>
+      <div>
+        <button id="filter-clear" class="sankey-clear-filter text-uppercase">Limpar seleção <span class="text-underline">X</span></button>
+      </div>
     </div>
-    <div>
-      <select name="filter-product" id="filter-product">
-        <option value="--">Filtrar por Produto</option>
-      </select>
-    </div>
-    <div>
-      <button id="filter-clear" class="sankey-clear-filter">Limpar seleção</button>
-    </div>
+    <div id="chart-sankey"></div>
   </div>
-  <div id="chart-sankey"></div>
   <script src="./sankey.js"></script>
 </body>
 </html>

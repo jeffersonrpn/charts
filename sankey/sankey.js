@@ -2,14 +2,14 @@ async function draw() {
 
   const dimensions = {
     width: 800,
-    height: 800,
+    height: 1200,
     margin: {
       top: 50,
-      right: 180,
+      right: 220,
       bottom: 50,
       left: 120
     },
-    nodeWidth: 15
+    nodeWidth: 10
   }
   dimensions.wrapperWidth = dimensions.width + dimensions.margin.left + dimensions.margin.right;
   dimensions.wrapperHeight = dimensions.height + dimensions.margin.top + dimensions.margin.top;
@@ -49,7 +49,7 @@ async function draw() {
     .nodeId(d => d.name)
     .nodeAlign(d3.sankeyJustify)
     .nodeWidth(dimensions.nodeWidth)
-    .nodePadding(5)
+    .nodePadding(10)
     .nodeSort(null)
     .extent([[1, 2], [dimensions.width - 1, dimensions.height - 5]]);
 
