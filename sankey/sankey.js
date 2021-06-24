@@ -7,7 +7,7 @@ async function draw() {
       top: 50,
       right: 220,
       bottom: 50,
-      left: 120
+      left: 160
     },
     nodeWidth: 10
   }
@@ -109,8 +109,19 @@ async function draw() {
     .attr("height", d => d.y1 - d.y0)
     .attr("width", d => d.x1 - d.x0)
     .attr("fill", d => (d.x0 > 20 && d.x0 < dimensions.width - 20) ? "#ffffff" : "none")
-    .append("title")
-    .text(d => `${d.name}\n${d.value}`);
+    .on("mouseover", () => {
+      tooltip.style("display", null);
+    })
+    .on("mouseout", () => {
+      tooltip.style("display", "none");
+    })
+    .on("mousemove", (event, d) => {
+      const xy = d3.pointer(event);
+      tooltipBody.html(d.name);
+      tooltip.attr("transform", `translate(${xy[0]}, ${xy[1]})`);
+    });
+    // .append("title")
+    // .text(d => `${d.name}\n${d.value}`)
 
   const link = bounds.append("g")
     .attr("fill", "none")
@@ -198,18 +209,21 @@ async function draw() {
     d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
   });
 
-  function dragmove(d) {
-    console.log("passou");
-    d3.select(this)
-      .attr("transform",
-        "translate("
-        + d.x + ","
-        + (d.y = Math.max(
-          0, Math.min(height - d.dy, d3.event.y))
-        ) + ")");
-    sankey.relayout();
-    link.attr("d", sankey.link());
-  }
+  const tooltip = wrapper.append("foreignObject")
+    .attr("class", "chart-tooltip")
+    .attr("x", 130)
+    .attr("y", 0)
+    .attr("width", 200)
+    .attr("height", 200)
+    .style("display", "none");
+  const tooltipContent = tooltip.append("xhtml:div")
+    .attr("class", "chart-tooltip-content");
+  const tooltipBody = tooltipContent.append("div")
+    .attr("class", "chart-tooltip-body")
+    .style("background-color", "#cccccc")
+    .style("border", "solid 1px #000000")
+    .style("float", "left")
+    .style("padding", "0.5rem");
 
   function removeBlank(p) {
     return p.replace(/ /g, "-");
