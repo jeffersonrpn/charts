@@ -209,12 +209,12 @@ async function draw() {
     d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
   });
 
-  const tooltip = wrapper.append("foreignObject")
+  const tooltip = bounds.append("foreignObject")
     .attr("class", "chart-tooltip")
-    .attr("x", 130)
+    .attr("x", 10)
     .attr("y", 0)
     .attr("width", 200)
-    .attr("height", 200)
+    .attr("height", 100)
     .style("display", "none");
   const tooltipContent = tooltip.append("xhtml:div")
     .attr("class", "chart-tooltip-content");
