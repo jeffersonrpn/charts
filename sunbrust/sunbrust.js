@@ -138,6 +138,7 @@ async function draw() {
     .attr("fill-opacity", d => +labelVisible(d))
     .attr("transform", d => labelTransform(d))
     .attr("font-family", "informative-bold")
+    .attr("font-size", "0.7rem")
     .text(d => d.data.data.name);
 
   const title = wrapper.append("text")
