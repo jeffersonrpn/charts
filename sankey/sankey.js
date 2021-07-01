@@ -141,14 +141,19 @@ async function draw() {
     })
     .attr("stroke-width", d => Math.max(1, d.width))
     .attr("id", d => "link" + d.index)
-    .attr("class", d => `sankey-link link-${d.uf} link-${removeBlank(d.funcao)}`);
-  // .on("mouseover", (event, element) => {
-  //   d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
-  //   d3.select("#link" + element.index).attr("stroke-opacity", 1);
-  // })
-  // .on("mouseout", () => {
-  //   d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
-  // });
+    .attr("class", d => `sankey-link link-${d.uf} link-${removeBlank(d.funcao)}`)
+  .on("mouseover", (event, element) => {
+    d3.select("#link" + element.index).attr("stroke-opacity", 1);
+  })
+  .on("mouseout", (event, element) => {
+    const uf = d3.select("#filter-uf").property("value");
+    const product = d3.select("#filter-product").property("value");
+    if (element.uf === uf || element.funcao === product) {
+      d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
+    } else {
+      d3.select("#link" + element.index).attr("stroke-opacity", offOpacity);
+    }
+  });
 
   link.append("title")
     .text(d => `${d.source.name} → ${d.target.name}\n${d.value}`);
@@ -195,13 +200,17 @@ async function draw() {
 
   d3.select("#filter-uf").on("change", (e) => {
     const uf = d3.select("#filter-uf").property("value");
+    const product = d3.select("#filter-product").property("value");
     d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
     d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
+    d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
   });
 
   d3.select("#filter-product").on("change", (e) => {
+    const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
     d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
+    d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
     d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
   });
 
