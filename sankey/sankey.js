@@ -14,7 +14,7 @@ async function draw() {
   dimensions.wrapperWidth = dimensions.width + dimensions.margin.left + dimensions.margin.right;
   dimensions.wrapperHeight = dimensions.height + dimensions.margin.top + dimensions.margin.top;
   const offOpacity = 0.1;
-  const onOpacity = 0.8;
+  const onOpacity = 0.7;
 
   const links = await d3.csv("data3.csv");
   links.map(l => {
@@ -148,10 +148,14 @@ async function draw() {
   .on("mouseout", (event, element) => {
     const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
-    if (element.uf === uf || element.funcao === product) {
-      d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
+    if (checkFilterApplied(uf, product)) {
+      if (element.uf === uf || element.funcao === product) {
+        d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
+      } else {
+        d3.select("#link" + element.index).attr("stroke-opacity", offOpacity);
+      }
     } else {
-      d3.select("#link" + element.index).attr("stroke-opacity", offOpacity);
+      d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
     }
   });
 
@@ -215,6 +219,8 @@ async function draw() {
   });
 
   d3.select("#filter-clear").on("click", (e) => {
+    d3.select("#filter-uf").property("value", "--");
+    d3.select("#filter-product").property("value", "--");
     d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
   });
 
@@ -236,6 +242,10 @@ async function draw() {
 
   function removeBlank(p) {
     return p.replace(/ /g, "-");
+  }
+
+  function checkFilterApplied(uf, product) {
+    return (uf !== '--' || product !== '--');
   }
 
 }
