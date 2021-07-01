@@ -49,12 +49,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+    }
+    @media (min-width: 992px) {
+      .sankey-filter {
+        flex-direction: row;
+      }
     }
 
     .sankey-select {
-      margin-right: 2rem;
       padding: 0.5rem;
       border: none;
+    }
+    @media (min-width: 992px) {
+      .sankey-select {
+        margin-right: 2rem;
+      }
     }
 
     .sankey-clear-filter {
@@ -64,23 +74,25 @@
       cursor: pointer;
     }
 
-    .san
+    .mb {
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <div class="chart-wrapper">
     <div class="sankey-filter">
-      <div>
+      <div class="mb">
         <select name="filter-uf" id="filter-uf" class="sankey-select text-uppercase">
           <option value="--">Filtrar por Estado</option>
         </select>
       </div>
-      <div>
+      <div class="mb">
         <select name="filter-product" id="filter-product" class="sankey-select text-uppercase">
           <option value="--">Filtrar por Produto</option>
         </select>
       </div>
-      <div>
+      <div class="mb">
         <button id="filter-clear" class="sankey-clear-filter text-uppercase">Limpar seleção <span class="text-underline">X</span></button>
       </div>
     </div>
