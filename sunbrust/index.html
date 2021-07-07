@@ -26,12 +26,6 @@
         font-weight: bold;
         src: url("../fonts/informative-bold.otf") format("opentype");
       }
-  
-      html,
-      body {
-        font-family: "informative", sans-serif;
-        background-color: #ffffff;
-      }
 
       .text {
         font-family: "informative";
@@ -48,6 +42,14 @@
 
       .sunbrust {
         display: flex;
+        flex-direction: column;
+        font-family: "informative", sans-serif;
+      }
+
+      @media (min-width: 800px) {
+        .sunbrust {
+          flex-direction: row;
+        }
       }
 
       .sunbrust-nav {
