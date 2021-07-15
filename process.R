@@ -38,6 +38,7 @@ write_csv(data2_finish, paste0(here::here(), "/sunbrust/data2.csv"))
 
 
 # FUNÇÕES DE PRODUTOS POR MUNICÍPIO E FORNECEDOR
+# Links: município -> empresa -> tecnologia
 # Gráfico 03
 data3A <- data3_raw %>%
   select(source = "Cidade", target = "Nome do fornecedor serviço", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
@@ -57,6 +58,35 @@ data3B <- data3_raw %>%
   mutate(count = value, uf = "", regiao = "", tipo = "funcao", funcao = target) %>% 
   arrange(regiao, desc(count))
   
+data3_finish <- data3A %>% 
+  union(data3B)
+
+write_csv(data3_finish, paste0(here::here(), "/sankey/data3.csv"))
+
+
+
+
+# FUNÇÕES DE PRODUTOS POR MUNICÍPIO E FORNECEDOR
+# Links: município -> tecnologia -> empresa
+# Gráfico 03
+data3A <- data3_raw %>%
+  select(source = "Cidade", target = "Nome do fornecedor serviço", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
+  group_by(target) %>% 
+  mutate(count = n(), tipo = "regiao", funcao = "") %>% 
+  arrange(regiao, desc(count))
+
+#data3B <- data3_raw %>%
+#  select(source = "Nome do fornecedor serviço", target = "Função do produto", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
+#  group_by(target) %>% 
+#  mutate(count = n()) %>%  
+#  arrange(desc(count))
+data3B <- data3_raw %>%
+  select(source = "Função do produto", target = "Nome do fornecedor serviço", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
+  group_by(source, target) %>% 
+  summarise(value = sum(value)) %>% 
+  mutate(count = value, uf = "", regiao = "", tipo = "funcao", funcao = target) %>% 
+  arrange(regiao, desc(count))
+
 data3_finish <- data3A %>% 
   union(data3B)
 
