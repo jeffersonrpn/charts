@@ -1,208 +1,196 @@
 source,target,value,uf,regiao,count,tipo,funcao
-Aparecida de Goiânia,Inloco,1,GO,Centro-Oeste,27,regiao,
-Caldas Novas,Inloco,1,GO,Centro-Oeste,27,regiao,
-Aparecida de Goiânia,ABR Telecom,1,GO,Centro-Oeste,2,regiao,
-Aparecida de Goiânia,LifesHub,1,GO,Centro-Oeste,2,regiao,
-Luziânia,"IMED – Inst. de Med., Estudos e Desenv.",1,GO,Centro-Oeste,2,regiao,
-Campo Grande,Prefeitura Campo Grande,1,MS,Centro-Oeste,2,regiao,
-Brasília,Huawei,1,DF,Centro-Oeste,1,regiao,
-Aparecida de Goiânia,Prefeitura de Aparecida de Goiânia,1,GO,Centro-Oeste,1,regiao,
-João Pessoa,Inloco,1,PB,Nordeste,27,regiao,
-Caruaru,Inloco,1,PE,Nordeste,27,regiao,
-Recife,Inloco,1,PE,Nordeste,27,regiao,
-Teresina,Inloco,1,PI,Nordeste,27,regiao,
-Aracaju,Inloco,1,SE,Nordeste,27,regiao,
-Salvador,Não Localizada,1,BA,Nordeste,5,regiao,
-Teresina,Scipopulis,1,PI,Nordeste,5,regiao,
-João Pessoa,Dahua Technology,1,PB,Nordeste,3,regiao,
-Maceió,ABR Telecom,1,AL,Nordeste,2,regiao,
-Recife,Brainy Resolution,1,PE,Nordeste,2,regiao,
-Aracaju,Unale,1,SE,Nordeste,2,regiao,
-Araguaína,Ministério da Saúde,1,TO,Nordeste,2,regiao,
-Salvador,Agência Nacional de Aviação Civil,1,BA,Nordeste,1,regiao,
-Vitória da Conquista,Prefeitura de Vitória da Conquista,1,BA,Nordeste,1,regiao,
-Fortaleza,HSH - Instal. e Manut. de Equip. Eletrônicos,1,CE,Nordeste,1,regiao,
-Campina Grande,Nuveo Technologies,1,PB,Nordeste,1,regiao,
-João Pessoa,EduSim,1,PB,Nordeste,1,regiao,
-João Pessoa,Sec. da Fazenda de João Pessoa,1,PB,Nordeste,1,regiao,
-Jaboatão dos Guararapes,Prefeitura de Jaboatão dos Guararapes,1,PE,Nordeste,1,regiao,
-Recife,Mamba Labs,1,PE,Nordeste,1,regiao,
-Recife,Núcleo de Gestão do Porto Digital,1,PE,Nordeste,1,regiao,
-Recife,Prefeitura do Recife,1,PE,Nordeste,1,regiao,
-Teresina,Colab,1,PI,Nordeste,1,regiao,
-Parnamirim,Ministério Público RN,1,RN,Nordeste,1,regiao,
-Aracaju,Prefeitura de Aracaju,1,SE,Nordeste,1,regiao,
-Aracaju,Universidade Federal de Sergipe; Prefeitura de Aracaju,1,SE,Nordeste,1,regiao,
-Rio Branco,Inloco,1,AC,Norte,27,regiao,
-Macapá,Inloco,1,AP,Norte,27,regiao,
-Manaus,Sec. da Saúde de Manaus,1,AM,Norte,2,regiao,
-Porto Velho,Brainy Resolution,1,RO,Norte,2,regiao,
-Governador Valadares,Inloco,1,MG,Sudeste,27,regiao,
-Varginha,Inloco,1,MG,Sudeste,27,regiao,
-Niterói,Inloco,1,RJ,Sudeste,27,regiao,
-Rio de Janeiro,Inloco,1,RJ,Sudeste,27,regiao,
-Teresópolis,Inloco,1,RJ,Sudeste,27,regiao,
-Campinas,Inloco,1,SP,Sudeste,27,regiao,
-Jacareí,Inloco,1,SP,Sudeste,27,regiao,
-Santo André,Inloco,1,SP,Sudeste,27,regiao,
-São Carlos,Inloco,1,SP,Sudeste,27,regiao,
-São Paulo,Inloco,1,SP,Sudeste,27,regiao,
-Belo Horizonte,Scipopulis,1,MG,Sudeste,5,regiao,
-Juiz de Fora,Instituto D'Or de Pesquisa e Ensino,1,MG,Sudeste,5,regiao,
-Campos dos Goytacazes,Instituto D'Or de Pesquisa e Ensino,1,RJ,Sudeste,5,regiao,
-Macaé,Instituto D'Or de Pesquisa e Ensino,1,RJ,Sudeste,5,regiao,
-Nova Iguaçu,Instituto D'Or de Pesquisa e Ensino,1,RJ,Sudeste,5,regiao,
-Rio de Janeiro,Scipopulis,1,RJ,Sudeste,5,regiao,
-São João da Barra,Instituto D'Or de Pesquisa e Ensino,1,RJ,Sudeste,5,regiao,
-Campinas,Não Localizada,1,SP,Sudeste,5,regiao,
-Guarulhos,Não Localizada,1,SP,Sudeste,5,regiao,
-São Paulo,Scipopulis,1,SP,Sudeste,5,regiao,
-São Sebastião,Não Localizada,1,SP,Sudeste,5,regiao,
-São Leopoldo,Eagle Tecnologia,1,RJ,Sudeste,4,regiao,
-Rio de Janeiro,Dahua Technology,1,RJ,Sudeste,3,regiao,
-Cachoeiro de Itapemirim,CyberLabs,1,ES,Sudeste,2,regiao,
-Itajubá,ProntLife,1,MG,Sudeste,2,regiao,
-Rio de Janeiro,CyberLabs,1,RJ,Sudeste,2,regiao,
-Teresópolis,ProntLife,1,RJ,Sudeste,2,regiao,
-Campinas,Unicamp,1,SP,Sudeste,2,regiao,
-São Paulo,LifesHub,1,SP,Sudeste,2,regiao,
-Sorocaba,Ministério da Saúde,1,SP,Sudeste,2,regiao,
-Belo Horizonte,BirthTech,1,MG,Sudeste,1,regiao,
-Belo Horizonte,Prefeitura de Belo Horizonte; Unimed BH; Vale,1,MG,Sudeste,1,regiao,
-Betim,Prefeitura de Betim,1,MG,Sudeste,1,regiao,
-Governador Valadares,JMM Tech,1,MG,Sudeste,1,regiao,
-Maricá,Prefeitura de Maricá,1,RJ,Sudeste,1,regiao,
-Rio de Janeiro,Unirio,1,RJ,Sudeste,1,regiao,
-Volta Redonda,Prefeitura de Volta Redonda,1,RJ,Sudeste,1,regiao,
-Bauru,Instituto Soma,1,SP,Sudeste,1,regiao,
-Campinas,Contsec Serviços,1,SP,Sudeste,1,regiao,
-Campinas,Prefeitura de Campinas,1,SP,Sudeste,1,regiao,
-Guarulhos,Dyno Security,1,SP,Sudeste,1,regiao,
-Santa Isabel,M4 Inteligência Digital,1,SP,Sudeste,1,regiao,
-Santana de Parnaíba,Prefeitura de Santana de Parnaíba; Google,1,SP,Sudeste,1,regiao,
-Santo André,Prefeitura de Santo André; Eicon Controles Inteligentes,1,SP,Sudeste,1,regiao,
-Santos,Prefeitura de Santos,1,SP,Sudeste,1,regiao,
-São Caetano do Sul,Prefeitura de São Caetano do Sul; USP,1,SP,Sudeste,1,regiao,
-São Paulo,Prefeitura de São Paulo,1,SP,Sudeste,1,regiao,
-São Paulo,Sec. Mun. da Saúde de São Paulo,1,SP,Sudeste,1,regiao,
-São Paulo,SPTrans,1,SP,Sudeste,1,regiao,
-Cascavel,Inloco,1,PR,Sul,27,regiao,
-Curitiba,Inloco,1,PR,Sul,27,regiao,
-Foz do Iguaçu,Inloco,1,PR,Sul,27,regiao,
-Maringá,Inloco,1,PR,Sul,27,regiao,
-Ponta Grossa,Inloco,1,PR,Sul,27,regiao,
-Ijuí,Inloco,1,RS,Sul,27,regiao,
-Porto Alegre,Inloco,1,RS,Sul,27,regiao,
-Rio Grande,Inloco,1,RS,Sul,27,regiao,
-Porto Alegre,Scipopulis,1,RS,Sul,5,regiao,
-Mampituba,Eagle Tecnologia,1,RS,Sul,4,regiao,
-Três Cachoeiras,Eagle Tecnologia,1,RS,Sul,4,regiao,
-Passo de Torres,Eagle Tecnologia,1,SC,Sul,4,regiao,
-Porto Alegre,Dahua Technology,1,RS,Sul,3,regiao,
-Curitiba,Instituto Laura Fressatto,1,PR,Sul,2,regiao,
-Curitiba,Unale,1,PR,Sul,2,regiao,
-São José dos Pinhais,Instituto Laura Fressatto,1,PR,Sul,2,regiao,
-São José dos Pinhais,Prefeitura de São José dos Pinhais,1,PR,Sul,2,regiao,
-Fazenda Rio Grande,Prefeitura de Fazenda Rio Grande,1,PR,Sul,1,regiao,
-Foz do Iguaçu,Prefeitura de Foz do Iguaçu,1,PR,Sul,1,regiao,
-Pinhais,IDS Software e Assessoria,1,PR,Sul,1,regiao,
-Umuarama,Prefeitura de Umuarama,1,PR,Sul,1,regiao,
-Alegrete,Instituto Federal Farroupilha,1,RS,Sul,1,regiao,
-Porto Alegre,Pix Force; UFRGS,1,RS,Sul,1,regiao,
-Sapiranga,Paipe,1,RS,Sul,1,regiao,
-Balneário Camboriú,Federação Catarinense de Municípios,1,SC,Sul,1,regiao,
-Balneário Camboriú,Prefeitura de Balneário Camboriú; Polícia Militar SC,1,SC,Sul,1,regiao,
-Blumenau,Sec. da Saúde de Blumenau,1,SC,Sul,1,regiao,
-Brusque,CIGA-SC,1,SC,Sul,1,regiao,
-Florianópolis,Direta Telecomunicações,1,SC,Sul,1,regiao,
-Florianópolis,Intelbras,1,SC,Sul,1,regiao,
-Florianópolis,Topmed,1,SC,Sul,1,regiao,
-Governador Celso Ramos,Smart Tour Brasil,1,SC,Sul,1,regiao,
-Itajaí,2bTriade,1,SC,Sul,1,regiao,
-Itajaí,Prefeitura de Itajaí,1,SC,Sul,1,regiao,
-Jaraguá do Sul,Olos Tecnologia,1,SC,Sul,1,regiao,
-Jaraguá do Sul,Prefeitura de Jaraguá do Sul,1,SC,Sul,1,regiao,
-Tubarão,Deconve Tech,1,SC,Sul,1,regiao,
-Tubarão,New System Vendas Inst. e Monitoram.,1,SC,Sul,1,regiao,
-Inloco,Monitoramento do fluxo de pessoas,27,,,27,funcao,Monitoramento do fluxo de pessoas
-Instituto D'Or de Pesquisa e Ensino,Telemedicina,5,,,5,funcao,Telemedicina
-Scipopulis,Monitoramento do fluxo de pessoas,5,,,5,funcao,Monitoramento do fluxo de pessoas
-Eagle Tecnologia,Telemedicina,4,,,4,funcao,Telemedicina
-Dahua Technology,Monitoramento de temperatura,3,,,3,funcao,Monitoramento de temperatura
-Não Localizada,Monitoramento de temperatura,3,,,3,funcao,Monitoramento de temperatura
-ABR Telecom,Monitoramento do fluxo de pessoas,2,,,2,funcao,Monitoramento do fluxo de pessoas
-Brainy Resolution,Telemedicina,2,,,2,funcao,Telemedicina
-"IMED – Inst. de Med., Estudos e Desenv.",Telemedicina,2,,,2,funcao,Telemedicina
-Instituto Laura Fressatto,Telemedicina,2,,,2,funcao,Telemedicina
-LifesHub,Rastreamento de contatos,2,,,2,funcao,Rastreamento de contatos
-Prefeitura Campo Grande,Telemedicina,2,,,2,funcao,Telemedicina
-ProntLife,Telemedicina,2,,,2,funcao,Telemedicina
-Unale,Monitoramento de temperatura,2,,,2,funcao,Monitoramento de temperatura
-2bTriade,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-Agência Nacional de Aviação Civil,Identificação de pessoas,1,,,1,funcao,Identificação de pessoas
-BirthTech,Telemedicina,1,,,1,funcao,Telemedicina
-CIGA-SC,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Colab,Telemedicina,1,,,1,funcao,Telemedicina
-Contsec Serviços,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-CyberLabs,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-CyberLabs,Telemedicina,1,,,1,funcao,Telemedicina
-Deconve Tech,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Direta Telecomunicações,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-Dyno Security,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-EduSim,Fornecimento de informações,1,,,1,funcao,Fornecimento de informações
-Federação Catarinense de Municípios,Telemedicina,1,,,1,funcao,Telemedicina
-HSH - Instal. e Manut. de Equip. Eletrônicos,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-Huawei,Telemedicina,1,,,1,funcao,Telemedicina
-IDS Software e Assessoria,Telemedicina,1,,,1,funcao,Telemedicina
-Instituto Federal Farroupilha,Telemedicina,1,,,1,funcao,Telemedicina
-Instituto Soma,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Intelbras,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-JMM Tech,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-M4 Inteligência Digital,Telemedicina,1,,,1,funcao,Telemedicina
-Mamba Labs,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Ministério da Saúde,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Ministério da Saúde,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Ministério Público RN,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Não Localizada,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Não Localizada,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-New System Vendas Inst. e Monitoram.,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Núcleo de Gestão do Porto Digital,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Nuveo Technologies,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Olos Tecnologia,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Paipe,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-Pix Force; UFRGS,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-Prefeitura de Aparecida de Goiânia,Digitalização de serviços públicos,1,,,1,funcao,Digitalização de serviços públicos
-Prefeitura de Aracaju,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Prefeitura de Balneário Camboriú; Polícia Militar SC,Monitoramento de uso de máscara,1,,,1,funcao,Monitoramento de uso de máscara
-Prefeitura de Belo Horizonte; Unimed BH; Vale,Telemedicina,1,,,1,funcao,Telemedicina
-Prefeitura de Betim,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Prefeitura de Campinas,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de Fazenda Rio Grande,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de Foz do Iguaçu,Telemedicina,1,,,1,funcao,Telemedicina
-Prefeitura de Itajaí,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de Jaboatão dos Guararapes,Telemedicina,1,,,1,funcao,Telemedicina
-Prefeitura de Jaraguá do Sul,Telemedicina,1,,,1,funcao,Telemedicina
-Prefeitura de Maricá,Fornecimento de informações,1,,,1,funcao,Fornecimento de informações
-Prefeitura de Santana de Parnaíba; Google,Telemedicina,1,,,1,funcao,Telemedicina
-Prefeitura de Santo André; Eicon Controles Inteligentes,Digitalização de serviços públicos,1,,,1,funcao,Digitalização de serviços públicos
-Prefeitura de Santos,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de São Caetano do Sul; USP,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Prefeitura de São José dos Pinhais,Fornecimento de informações,1,,,1,funcao,Fornecimento de informações
-Prefeitura de São José dos Pinhais,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de São Paulo,Digitalização de serviços públicos,1,,,1,funcao,Digitalização de serviços públicos
-Prefeitura de Umuarama,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de Vitória da Conquista,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura de Volta Redonda,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Prefeitura do Recife,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Sec. da Fazenda de João Pessoa,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Sec. da Saúde de Blumenau,Telemedicina,1,,,1,funcao,Telemedicina
-Sec. da Saúde de Manaus,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
-Sec. da Saúde de Manaus,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-Sec. Mun. da Saúde de São Paulo,Telemedicina,1,,,1,funcao,Telemedicina
-Smart Tour Brasil,Rastreamento de contatos,1,,,1,funcao,Rastreamento de contatos
-SPTrans,Monitoramento do fluxo de pessoas,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Topmed,Telemedicina,1,,,1,funcao,Telemedicina
-Unicamp,Monitoramento de temperatura,1,,,1,funcao,Monitoramento de temperatura
-Unicamp,Telemedicina,1,,,1,funcao,Telemedicina
-Unirio,Telemedicina,1,,,1,funcao,Telemedicina
-Universidade Federal de Sergipe; Prefeitura de Aracaju,Mapeamento da evolução da COVID-19,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Aparecida de Goiânia,Monitoramento do fluxo de pessoas,1,GO,Centro-Oeste,41,regiao,
+Caldas Novas,Monitoramento do fluxo de pessoas,1,GO,Centro-Oeste,41,regiao,
+Brasília,Telemedicina,1,DF,Centro-Oeste,37,regiao,
+Luziânia,Telemedicina,1,GO,Centro-Oeste,37,regiao,
+Campo Grande,Telemedicina,1,MS,Centro-Oeste,37,regiao,
+Aparecida de Goiânia,Rastreamento de contatos,1,GO,Centro-Oeste,11,regiao,
+Aparecida de Goiânia,Digitalização de serviços públicos,1,GO,Centro-Oeste,3,regiao,
+Maceió,Monitoramento do fluxo de pessoas,1,AL,Nordeste,41,regiao,
+Campina Grande,Monitoramento do fluxo de pessoas,1,PB,Nordeste,41,regiao,
+João Pessoa,Monitoramento do fluxo de pessoas,1,PB,Nordeste,41,regiao,
+Caruaru,Monitoramento do fluxo de pessoas,1,PE,Nordeste,41,regiao,
+Recife,Monitoramento do fluxo de pessoas,1,PE,Nordeste,41,regiao,
+Teresina,Monitoramento do fluxo de pessoas,1,PI,Nordeste,41,regiao,
+Aracaju,Monitoramento do fluxo de pessoas,1,SE,Nordeste,41,regiao,
+Jaboatão dos Guararapes,Telemedicina,1,PE,Nordeste,37,regiao,
+Recife,Telemedicina,1,PE,Nordeste,37,regiao,
+Teresina,Telemedicina,1,PI,Nordeste,37,regiao,
+Salvador,Monitoramento de temperatura,1,BA,Nordeste,17,regiao,
+Vitória da Conquista,Mapeamento da evolução da COVID-19,1,BA,Nordeste,17,regiao,
+Fortaleza,Monitoramento de temperatura,1,CE,Nordeste,17,regiao,
+João Pessoa,Monitoramento de temperatura,1,PB,Nordeste,17,regiao,
+João Pessoa,Mapeamento da evolução da COVID-19,1,PB,Nordeste,17,regiao,
+Recife,Mapeamento da evolução da COVID-19,1,PE,Nordeste,17,regiao,
+Parnamirim,Mapeamento da evolução da COVID-19,1,RN,Nordeste,17,regiao,
+Aracaju,Monitoramento de temperatura,1,SE,Nordeste,17,regiao,
+Aracaju,Mapeamento da evolução da COVID-19,1,SE,Nordeste,17,regiao,
+Araguaína,Mapeamento da evolução da COVID-19,1,TO,Nordeste,17,regiao,
+Aracaju,Rastreamento de contatos,1,SE,Nordeste,11,regiao,
+João Pessoa,Fornecimento de informações,1,PB,Nordeste,3,regiao,
+Salvador,Identificação de pessoas,1,BA,Nordeste,1,regiao,
+Rio Branco,Monitoramento do fluxo de pessoas,1,AC,Norte,41,regiao,
+Macapá,Monitoramento do fluxo de pessoas,1,AP,Norte,41,regiao,
+Porto Velho,Telemedicina,1,RO,Norte,37,regiao,
+Manaus,Mapeamento da evolução da COVID-19,1,AM,Norte,17,regiao,
+Manaus,Rastreamento de contatos,1,AM,Norte,11,regiao,
+Cachoeiro de Itapemirim,Monitoramento do fluxo de pessoas,1,ES,Sudeste,41,regiao,
+Belo Horizonte,Monitoramento do fluxo de pessoas,1,MG,Sudeste,41,regiao,
+Governador Valadares,Monitoramento do fluxo de pessoas,1,MG,Sudeste,41,regiao,
+Varginha,Monitoramento do fluxo de pessoas,1,MG,Sudeste,41,regiao,
+Niterói,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,
+Rio de Janeiro,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,
+Teresópolis,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,
+Campinas,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,
+Jacareí,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,
+Santo André,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,
+São Carlos,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,
+São Paulo,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,
+Belo Horizonte,Telemedicina,1,MG,Sudeste,37,regiao,
+Itajubá,Telemedicina,1,MG,Sudeste,37,regiao,
+Juiz de Fora,Telemedicina,1,MG,Sudeste,37,regiao,
+Campos dos Goytacazes,Telemedicina,1,RJ,Sudeste,37,regiao,
+Macaé,Telemedicina,1,RJ,Sudeste,37,regiao,
+Nova Iguaçu,Telemedicina,1,RJ,Sudeste,37,regiao,
+Rio de Janeiro,Telemedicina,1,RJ,Sudeste,37,regiao,
+São João da Barra,Telemedicina,1,RJ,Sudeste,37,regiao,
+São Leopoldo,Telemedicina,1,RJ,Sudeste,37,regiao,
+Teresópolis,Telemedicina,1,RJ,Sudeste,37,regiao,
+Campinas,Telemedicina,1,SP,Sudeste,37,regiao,
+Santa Isabel,Telemedicina,1,SP,Sudeste,37,regiao,
+Santana de Parnaíba,Telemedicina,1,SP,Sudeste,37,regiao,
+São Paulo,Telemedicina,1,SP,Sudeste,37,regiao,
+Rio de Janeiro,Monitoramento de temperatura,1,RJ,Sudeste,17,regiao,
+Volta Redonda,Mapeamento da evolução da COVID-19,1,RJ,Sudeste,17,regiao,
+Bauru,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,
+Campinas,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,
+Campinas,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,
+Guarulhos,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,
+Guarulhos,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,
+Santos,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,
+São Sebastião,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,
+Betim,Rastreamento de contatos,1,MG,Sudeste,11,regiao,
+Governador Valadares,Rastreamento de contatos,1,MG,Sudeste,11,regiao,
+São Caetano do Sul,Rastreamento de contatos,1,SP,Sudeste,11,regiao,
+São Paulo,Rastreamento de contatos,1,SP,Sudeste,11,regiao,
+Sorocaba,Rastreamento de contatos,1,SP,Sudeste,11,regiao,
+Maricá,Fornecimento de informações,1,RJ,Sudeste,3,regiao,
+Santo André,Digitalização de serviços públicos,1,SP,Sudeste,3,regiao,
+São Paulo,Digitalização de serviços públicos,1,SP,Sudeste,3,regiao,
+Cascavel,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,
+Curitiba,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,
+Foz do Iguaçu,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,
+Maringá,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,
+Ponta Grossa,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,
+Ijuí,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,
+Porto Alegre,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,
+Rio Grande,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,
+Tubarão,Monitoramento do fluxo de pessoas,1,SC,Sul,41,regiao,
+Curitiba,Telemedicina,1,PR,Sul,37,regiao,
+Foz do Iguaçu,Telemedicina,1,PR,Sul,37,regiao,
+Pinhais,Telemedicina,1,PR,Sul,37,regiao,
+São José dos Pinhais,Telemedicina,1,PR,Sul,37,regiao,
+Alegrete,Telemedicina,1,RS,Sul,37,regiao,
+Mampituba,Telemedicina,1,RS,Sul,37,regiao,
+Três Cachoeiras,Telemedicina,1,RS,Sul,37,regiao,
+Balneário Camboriú,Telemedicina,1,SC,Sul,37,regiao,
+Blumenau,Telemedicina,1,SC,Sul,37,regiao,
+Florianópolis,Telemedicina,1,SC,Sul,37,regiao,
+Jaraguá do Sul,Telemedicina,1,SC,Sul,37,regiao,
+Passo de Torres,Telemedicina,1,SC,Sul,37,regiao,
+Curitiba,Monitoramento de temperatura,1,PR,Sul,17,regiao,
+Fazenda Rio Grande,Mapeamento da evolução da COVID-19,1,PR,Sul,17,regiao,
+São José dos Pinhais,Mapeamento da evolução da COVID-19,1,PR,Sul,17,regiao,
+Umuarama,Mapeamento da evolução da COVID-19,1,PR,Sul,17,regiao,
+Porto Alegre,Monitoramento de temperatura,1,RS,Sul,17,regiao,
+Sapiranga,Monitoramento de temperatura,1,RS,Sul,17,regiao,
+Florianópolis,Monitoramento de temperatura,1,SC,Sul,17,regiao,
+Itajaí,Monitoramento de temperatura,1,SC,Sul,17,regiao,
+Itajaí,Mapeamento da evolução da COVID-19,1,SC,Sul,17,regiao,
+Brusque,Rastreamento de contatos,1,SC,Sul,11,regiao,
+Governador Celso Ramos,Rastreamento de contatos,1,SC,Sul,11,regiao,
+Jaraguá do Sul,Rastreamento de contatos,1,SC,Sul,11,regiao,
+São José dos Pinhais,Fornecimento de informações,1,PR,Sul,3,regiao,
+Balneário Camboriú,Monitoramento de uso de máscara,1,SC,Sul,1,regiao,
+Monitoramento do fluxo de pessoas,Inloco,27,,,27,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Scipopulis,5,,,5,funcao,Monitoramento do fluxo de pessoas
+Telemedicina,Instituto D'Or de Pesquisa e Ensino,5,,,5,funcao,Telemedicina
+Telemedicina,Eagle Tecnologia,4,,,4,funcao,Telemedicina
+Monitoramento de temperatura,Dahua Technology,3,,,3,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Não Localizada,3,,,3,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Unale,2,,,2,funcao,Monitoramento de temperatura
+Monitoramento do fluxo de pessoas,ABR Telecom,2,,,2,funcao,Monitoramento do fluxo de pessoas
+Rastreamento de contatos,LifesHub,2,,,2,funcao,Rastreamento de contatos
+Telemedicina,Brainy Resolution,2,,,2,funcao,Telemedicina
+Telemedicina,"IMED – Inst. de Med., Estudos e Desenv.",2,,,2,funcao,Telemedicina
+Telemedicina,Instituto Laura Fressatto,2,,,2,funcao,Telemedicina
+Telemedicina,Prefeitura Campo Grande,2,,,2,funcao,Telemedicina
+Telemedicina,ProntLife,2,,,2,funcao,Telemedicina
+Digitalização de serviços públicos,Prefeitura de Aparecida de Goiânia,1,,,1,funcao,Digitalização de serviços públicos
+Digitalização de serviços públicos,Prefeitura de Santo André; Eicon Controles Inteligentes,1,,,1,funcao,Digitalização de serviços públicos
+Digitalização de serviços públicos,Prefeitura de São Paulo,1,,,1,funcao,Digitalização de serviços públicos
+Mapeamento da evolução da COVID-19,Instituto Soma,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Mamba Labs,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Ministério da Saúde,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Ministério Público RN,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Não Localizada,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Núcleo de Gestão do Porto Digital,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Campinas,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Fazenda Rio Grande,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Itajaí,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Santos,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de São José dos Pinhais,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Umuarama,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Vitória da Conquista,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Prefeitura de Volta Redonda,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Sec. da Fazenda de João Pessoa,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Sec. da Saúde de Manaus,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Mapeamento da evolução da COVID-19,Universidade Federal de Sergipe; Prefeitura de Aracaju,1,,,1,funcao,Mapeamento da evolução da COVID-19
+Monitoramento de temperatura,2bTriade,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Contsec Serviços,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Direta Telecomunicações,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Dyno Security,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,HSH - Instal. e Manut. de Equip. Eletrônicos,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Intelbras,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Paipe,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Pix Force; UFRGS,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Unicamp,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento do fluxo de pessoas,CyberLabs,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Deconve Tech,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Não Localizada,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,New System Vendas Inst. e Monitoram.,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Nuveo Technologies,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Prefeitura do Recife,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,SPTrans,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Rastreamento de contatos,CIGA-SC,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,JMM Tech,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Ministério da Saúde,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Olos Tecnologia,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Prefeitura de Aracaju,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Prefeitura de Betim,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Prefeitura de São Caetano do Sul; USP,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Sec. da Saúde de Manaus,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Smart Tour Brasil,1,,,1,funcao,Rastreamento de contatos
+Telemedicina,BirthTech,1,,,1,funcao,Telemedicina
+Telemedicina,Colab,1,,,1,funcao,Telemedicina
+Telemedicina,CyberLabs,1,,,1,funcao,Telemedicina
+Telemedicina,Federação Catarinense de Municípios,1,,,1,funcao,Telemedicina
+Telemedicina,Huawei,1,,,1,funcao,Telemedicina
+Telemedicina,IDS Software e Assessoria,1,,,1,funcao,Telemedicina
+Telemedicina,Instituto Federal Farroupilha,1,,,1,funcao,Telemedicina
+Telemedicina,M4 Inteligência Digital,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Belo Horizonte; Unimed BH; Vale,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Foz do Iguaçu,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Jaboatão dos Guararapes,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Jaraguá do Sul,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Santana de Parnaíba; Google,1,,,1,funcao,Telemedicina
+Telemedicina,Sec. da Saúde de Blumenau,1,,,1,funcao,Telemedicina
+Telemedicina,Sec. Mun. da Saúde de São Paulo,1,,,1,funcao,Telemedicina
+Telemedicina,Topmed,1,,,1,funcao,Telemedicina
+Telemedicina,Unicamp,1,,,1,funcao,Telemedicina
+Telemedicina,Unirio,1,,,1,funcao,Telemedicina
+Fornecimento de informações,EduSim,1,,,1,funcao,Fornecimento de informações
+Fornecimento de informações,Prefeitura de Maricá,1,,,1,funcao,Fornecimento de informações
+Fornecimento de informações,Prefeitura de São José dos Pinhais,1,,,1,funcao,Fornecimento de informações
+Identificação de pessoas,Agência Nacional de Aviação Civil,1,,,1,funcao,Identificação de pessoas
+Monitoramento de uso de máscara,Prefeitura de Balneário Camboriú; Polícia Militar SC,1,,,1,funcao,Monitoramento de uso de máscara
