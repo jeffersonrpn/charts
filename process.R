@@ -70,9 +70,9 @@ write_csv(data3_finish, paste0(here::here(), "/sankey/data3.csv"))
 # Links: município -> tecnologia -> empresa
 # Gráfico 03
 data3A <- data3_raw %>%
-  select(source = "Cidade", target = "Nome do fornecedor serviço", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
+  select(source = "Cidade", target = "Função do produto", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
   group_by(target) %>% 
-  mutate(count = n(), tipo = "regiao", funcao = "") %>% 
+  mutate(count = n(), tipo = "regiao", funcao = target) %>% 
   arrange(regiao, desc(count))
 
 #data3B <- data3_raw %>%
@@ -84,10 +84,11 @@ data3B <- data3_raw %>%
   select(source = "Função do produto", target = "Nome do fornecedor serviço", value = "Quantidade deste produto na UF", uf = "UF", regiao = "Região") %>% 
   group_by(source, target) %>% 
   summarise(value = sum(value)) %>% 
-  mutate(count = value, uf = "", regiao = "", tipo = "funcao", funcao = target) %>% 
+  mutate(count = value, uf = "", regiao = "", tipo = "funcao", funcao = source) %>% 
   arrange(regiao, desc(count))
 
 data3_finish <- data3A %>% 
-  union(data3B)
+  union(data3B) %>% 
+  arrange(desc(value), regiao, uf, source)
 
 write_csv(data3_finish, paste0(here::here(), "/sankey/data3.csv"))

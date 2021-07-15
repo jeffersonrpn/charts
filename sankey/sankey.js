@@ -266,12 +266,8 @@ async function draw() {
       d3.selectAll(`.link-${uf}`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
       d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
     } else {
-      if (uf != "--") {
-        d3.selectAll(`.link-regiao`).filter(`.link-${uf}`).attr("stroke-opacity", onOpacity);
-      }
-      if (product != "--") {
-        d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
-      }
+      d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
+      d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
     }
   }
 
