@@ -114,21 +114,56 @@ São José dos Pinhais,Fornecimento de informações,1,PR,Sul,3,regiao,
 Balneário Camboriú,Monitoramento de uso de máscara,1,SC,Sul,1,regiao,
 Monitoramento do fluxo de pessoas,Inloco,27,,,27,funcao,Monitoramento do fluxo de pessoas
 Monitoramento do fluxo de pessoas,Scipopulis,5,,,5,funcao,Monitoramento do fluxo de pessoas
+Telemedicina,Unicamp,1,,,1,funcao,Telemedicina
 Telemedicina,Instituto D'Or de Pesquisa e Ensino,5,,,5,funcao,Telemedicina
 Telemedicina,Eagle Tecnologia,4,,,4,funcao,Telemedicina
-Monitoramento de temperatura,Dahua Technology,3,,,3,funcao,Monitoramento de temperatura
-Monitoramento de temperatura,Não Localizada,3,,,3,funcao,Monitoramento de temperatura
-Monitoramento de temperatura,Unale,2,,,2,funcao,Monitoramento de temperatura
-Monitoramento do fluxo de pessoas,ABR Telecom,2,,,2,funcao,Monitoramento do fluxo de pessoas
-Rastreamento de contatos,LifesHub,2,,,2,funcao,Rastreamento de contatos
 Telemedicina,Brainy Resolution,2,,,2,funcao,Telemedicina
 Telemedicina,"IMED – Inst. de Med., Estudos e Desenv.",2,,,2,funcao,Telemedicina
 Telemedicina,Instituto Laura Fressatto,2,,,2,funcao,Telemedicina
 Telemedicina,Prefeitura Campo Grande,2,,,2,funcao,Telemedicina
 Telemedicina,ProntLife,2,,,2,funcao,Telemedicina
+Monitoramento do fluxo de pessoas,ABR Telecom,2,,,2,funcao,Monitoramento do fluxo de pessoas
+Monitoramento de temperatura,Unicamp,1,,,1,funcao,Monitoramento de temperatura
+Monitoramento do fluxo de pessoas,CyberLabs,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Deconve Tech,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Não Localizada,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,New System Vendas Inst. e Monitoram.,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Nuveo Technologies,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,Prefeitura do Recife,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Monitoramento do fluxo de pessoas,SPTrans,1,,,1,funcao,Monitoramento do fluxo de pessoas
+Telemedicina,BirthTech,1,,,1,funcao,Telemedicina
+Telemedicina,Colab,1,,,1,funcao,Telemedicina
+Telemedicina,CyberLabs,1,,,1,funcao,Telemedicina
+Telemedicina,Federação Catarinense de Municípios,1,,,1,funcao,Telemedicina
+Telemedicina,Huawei,1,,,1,funcao,Telemedicina
+Telemedicina,IDS Software e Assessoria,1,,,1,funcao,Telemedicina
+Telemedicina,Instituto Federal Farroupilha,1,,,1,funcao,Telemedicina
+Telemedicina,M4 Inteligência Digital,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Belo Horizonte; Unimed BH; Vale,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Foz do Iguaçu,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Jaboatão dos Guararapes,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Jaraguá do Sul,1,,,1,funcao,Telemedicina
+Telemedicina,Prefeitura de Santana de Parnaíba; Google,1,,,1,funcao,Telemedicina
+Telemedicina,Sec. da Saúde de Blumenau,1,,,1,funcao,Telemedicina
+Telemedicina,Sec. Mun. da Saúde de São Paulo,1,,,1,funcao,Telemedicina
+Telemedicina,Topmed,1,,,1,funcao,Telemedicina
+Telemedicina,Unirio,1,,,1,funcao,Telemedicina
+Monitoramento de temperatura,Dahua Technology,3,,,3,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Não Localizada,3,,,3,funcao,Monitoramento de temperatura
+Monitoramento de temperatura,Unale,2,,,2,funcao,Monitoramento de temperatura
+Rastreamento de contatos,LifesHub,2,,,2,funcao,Rastreamento de contatos
 Digitalização de serviços públicos,Prefeitura de Aparecida de Goiânia,1,,,1,funcao,Digitalização de serviços públicos
 Digitalização de serviços públicos,Prefeitura de Santo André; Eicon Controles Inteligentes,1,,,1,funcao,Digitalização de serviços públicos
 Digitalização de serviços públicos,Prefeitura de São Paulo,1,,,1,funcao,Digitalização de serviços públicos
+Rastreamento de contatos,CIGA-SC,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,JMM Tech,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Ministério da Saúde,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Olos Tecnologia,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Prefeitura de Aracaju,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Prefeitura de Betim,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Prefeitura de São Caetano do Sul; USP,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Sec. da Saúde de Manaus,1,,,1,funcao,Rastreamento de contatos
+Rastreamento de contatos,Smart Tour Brasil,1,,,1,funcao,Rastreamento de contatos
 Mapeamento da evolução da COVID-19,Instituto Soma,1,,,1,funcao,Mapeamento da evolução da COVID-19
 Mapeamento da evolução da COVID-19,Mamba Labs,1,,,1,funcao,Mapeamento da evolução da COVID-19
 Mapeamento da evolução da COVID-19,Ministério da Saúde,1,,,1,funcao,Mapeamento da evolução da COVID-19
@@ -154,41 +189,6 @@ Monitoramento de temperatura,HSH - Instal. e Manut. de Equip. Eletrônicos,1,,,1
 Monitoramento de temperatura,Intelbras,1,,,1,funcao,Monitoramento de temperatura
 Monitoramento de temperatura,Paipe,1,,,1,funcao,Monitoramento de temperatura
 Monitoramento de temperatura,Pix Force; UFRGS,1,,,1,funcao,Monitoramento de temperatura
-Monitoramento de temperatura,Unicamp,1,,,1,funcao,Monitoramento de temperatura
-Monitoramento do fluxo de pessoas,CyberLabs,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Monitoramento do fluxo de pessoas,Deconve Tech,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Monitoramento do fluxo de pessoas,Não Localizada,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Monitoramento do fluxo de pessoas,New System Vendas Inst. e Monitoram.,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Monitoramento do fluxo de pessoas,Nuveo Technologies,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Monitoramento do fluxo de pessoas,Prefeitura do Recife,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Monitoramento do fluxo de pessoas,SPTrans,1,,,1,funcao,Monitoramento do fluxo de pessoas
-Rastreamento de contatos,CIGA-SC,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,JMM Tech,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Ministério da Saúde,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Olos Tecnologia,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Prefeitura de Aracaju,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Prefeitura de Betim,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Prefeitura de São Caetano do Sul; USP,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Sec. da Saúde de Manaus,1,,,1,funcao,Rastreamento de contatos
-Rastreamento de contatos,Smart Tour Brasil,1,,,1,funcao,Rastreamento de contatos
-Telemedicina,BirthTech,1,,,1,funcao,Telemedicina
-Telemedicina,Colab,1,,,1,funcao,Telemedicina
-Telemedicina,CyberLabs,1,,,1,funcao,Telemedicina
-Telemedicina,Federação Catarinense de Municípios,1,,,1,funcao,Telemedicina
-Telemedicina,Huawei,1,,,1,funcao,Telemedicina
-Telemedicina,IDS Software e Assessoria,1,,,1,funcao,Telemedicina
-Telemedicina,Instituto Federal Farroupilha,1,,,1,funcao,Telemedicina
-Telemedicina,M4 Inteligência Digital,1,,,1,funcao,Telemedicina
-Telemedicina,Prefeitura de Belo Horizonte; Unimed BH; Vale,1,,,1,funcao,Telemedicina
-Telemedicina,Prefeitura de Foz do Iguaçu,1,,,1,funcao,Telemedicina
-Telemedicina,Prefeitura de Jaboatão dos Guararapes,1,,,1,funcao,Telemedicina
-Telemedicina,Prefeitura de Jaraguá do Sul,1,,,1,funcao,Telemedicina
-Telemedicina,Prefeitura de Santana de Parnaíba; Google,1,,,1,funcao,Telemedicina
-Telemedicina,Sec. da Saúde de Blumenau,1,,,1,funcao,Telemedicina
-Telemedicina,Sec. Mun. da Saúde de São Paulo,1,,,1,funcao,Telemedicina
-Telemedicina,Topmed,1,,,1,funcao,Telemedicina
-Telemedicina,Unicamp,1,,,1,funcao,Telemedicina
-Telemedicina,Unirio,1,,,1,funcao,Telemedicina
 Fornecimento de informações,EduSim,1,,,1,funcao,Fornecimento de informações
 Fornecimento de informações,Prefeitura de Maricá,1,,,1,funcao,Fornecimento de informações
 Fornecimento de informações,Prefeitura de São José dos Pinhais,1,,,1,funcao,Fornecimento de informações
