@@ -141,35 +141,23 @@ async function draw() {
     })
     .attr("stroke-width", d => Math.max(1, d.width))
     .attr("id", d => "link" + d.index)
-    .attr("class", d => {
-      if (d.tipo === 'regiao') {
-        return `sankey-link link-regiao link-${d.uf} link-${removeBlank(d.funcao)}`;
+    .attr("class", d => `sankey-link link-${d.uf} link-${removeBlank(d.funcao)}`)
+  .on("mouseover", (event, element) => {
+    d3.select("#link" + element.index).attr("stroke-opacity", 1);
+  })
+  .on("mouseout", (event, element) => {
+    const uf = d3.select("#filter-uf").property("value");
+    const product = d3.select("#filter-product").property("value");
+    if (checkFilterApplied(uf, product)) {
+      if (element.uf === uf || element.funcao === product) {
+        d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
       } else {
-        return `sankey-link link-funcao link-${removeBlank(d.funcao)}`;
+        d3.select("#link" + element.index).attr("stroke-opacity", offOpacity);
       }
-    });
-  // .on("mouseover", (event, element) => {
-  //   d3.select("#link" + element.index).attr("stroke-opacity", 1);
-  // })
-  // .on("mouseout", (event, element) => {
-  //   const uf = d3.select("#filter-uf").property("value");
-  //   const product = d3.select("#filter-product").property("value");
-  //   if (checkFilterApplied(uf, product)) {
-  //     if (checkDoubleFilterApplied(uf, product)) {
-  //       if (element.uf === uf && element.funcao === product) {
-  //         d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
-  //       } else {
-  //         d3.select("#link" + element.index).attr("stroke-opacity", offOpacity);
-  //       }
-  //     } else if (element.uf === uf || element.funcao === product) {
-  //       d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
-  //     } else {
-  //       d3.select("#link" + element.index).attr("stroke-opacity", offOpacity);
-  //     }
-  //   } else {
-  //     d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
-  //   }
-  // });
+    } else {
+      d3.select("#link" + element.index).attr("stroke-opacity", onOpacity);
+    }
+  });
 
   link.append("title")
     .text(d => `${d.source.name} → ${d.target.name}\n${d.value}`);
@@ -217,13 +205,17 @@ async function draw() {
   d3.select("#filter-uf").on("change", (e) => {
     const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
-    applyFilter(uf, product);
+    d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
+    d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
+    d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
   });
-  
+
   d3.select("#filter-product").on("change", (e) => {
     const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
-    applyFilter(uf, product);
+    d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
+    d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
+    d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
   });
 
   d3.select("#filter-clear").on("click", (e) => {
@@ -254,25 +246,6 @@ async function draw() {
 
   function checkFilterApplied(uf, product) {
     return (uf !== '--' || product !== '--');
-  }
-
-  function checkDoubleFilterApplied(uf, product) {
-    return (uf !== '--' && product !== '--');
-  }
-
-  function applyFilter(uf, product) {
-    d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
-    if (checkDoubleFilterApplied(uf, product)) {
-      d3.selectAll(`.link-${uf}`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
-      d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
-    } else {
-      if (uf != "--") {
-        d3.selectAll(`.link-regiao`).filter(`.link-${uf}`).attr("stroke-opacity", onOpacity);
-      }
-      if (product != "--") {
-        d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
-      }
-    }
   }
 
 }
