@@ -1,0 +1,132 @@
+Nome do fornecedor serviço,Cidade,Função do produto,Outras funções,Quantidade deste produto na UF,UF,Região
+Inloco,Rio Branco,Monitoramento do fluxo de pessoas,N/A,1,AC,Norte
+ABR Telecom,Maceió,Monitoramento do fluxo de pessoas,N/A,1,AL,Nordeste
+Sec. da Saúde de Manaus,Manaus,Rastreamento de contatos,N/A,1,AM,Norte
+Sec. da Saúde de Manaus,Manaus,Mapeamento da evolução da COVID-19,N/A,1,AM,Norte
+Inloco,Macapá,Monitoramento do fluxo de pessoas,N/A,1,AP,Norte
+Agência Nacional de Aviação Civil,Salvador,Identificação de pessoas,N/A,1,BA,Nordeste
+Não Localizada,Salvador,Monitoramento de temperatura,Monitoramento de uso de máscara,1,BA,Nordeste
+Prefeitura de Vitória da Conquista,Vitória da Conquista,Mapeamento da evolução da COVID-19,N/A,1,BA,Nordeste
+HSH - Instal. e Manut. de Equip. Eletrônicos,Fortaleza,Monitoramento de temperatura,N/A,1,CE,Nordeste
+Huawei,Brasília,Telemedicina,N/A,1,DF,Centro-Oeste
+CyberLabs,Cachoeiro de Itapemirim,Monitoramento do fluxo de pessoas,N/A,1,ES,Sudeste
+ABR Telecom,Aparecida de Goiânia,Monitoramento do fluxo de pessoas,N/A,1,GO,Centro-Oeste
+Inloco,Aparecida de Goiânia,Monitoramento do fluxo de pessoas,N/A,1,GO,Centro-Oeste
+LifesHub,Aparecida de Goiânia,Rastreamento de contatos,N/A,1,GO,Centro-Oeste
+Prefeitura de Aparecida de Goiânia,Aparecida de Goiânia,Digitalização de serviços públicos,N/A,1,GO,Centro-Oeste
+Inloco,Caldas Novas,Monitoramento do fluxo de pessoas,N/A,1,GO,Centro-Oeste
+"IMED – Inst. de Med., Estudos e Desenv.",Luziânia,Telemedicina,N/A,1,GO,Centro-Oeste
+"IMED – Inst. de Med., Estudos e Desenv.",Luziânia,Telemedicina,N/A,1,GO,Centro-Oeste
+BirthTech,Belo Horizonte,Telemedicina,Digitalização de serviços,1,MG,Sudeste
+Prefeitura de Belo Horizonte; Unimed BH; Vale,Belo Horizonte,Telemedicina,N/A,1,MG,Sudeste
+Scipopulis,Belo Horizonte,Monitoramento do fluxo de pessoas,N/A,1,MG,Sudeste
+Prefeitura de Betim,Betim,Rastreamento de contatos,Mapeamento da evolução da COVID-19; Digitalização de serviços; Fornecimento de informações,1,MG,Sudeste
+Inloco,Governador Valadares,Monitoramento do fluxo de pessoas,N/A,1,MG,Sudeste
+JMM Tech,Governador Valadares,Rastreamento de contatos,N/A,1,MG,Sudeste
+ProntLife,Itajubá,Telemedicina,N/A,1,MG,Sudeste
+Instituto D'Or de Pesquisa e Ensino,Juiz de Fora,Telemedicina,Digitalização de serviços públicos,1,MG,Sudeste
+Inloco,Varginha,Monitoramento do fluxo de pessoas,N/A,1,MG,Sudeste
+Prefeitura Campo Grande,Campo Grande,Telemedicina,N/A,1,MS,Centro-Oeste
+Prefeitura Campo Grande,Campo Grande,Telemedicina,N/A,1,MS,Centro-Oeste
+Nuveo Technologies,Campina Grande,Monitoramento do fluxo de pessoas,Monitoramento de uso de máscara,1,PB,Nordeste
+Dahua Technology,João Pessoa,Monitoramento de temperatura,Identificação de pessoas,1,PB,Nordeste
+EduSim,João Pessoa,Fornecimento de informações,N/A,1,PB,Nordeste
+Inloco,João Pessoa,Monitoramento do fluxo de pessoas,N/A,1,PB,Nordeste
+Sec. da Fazenda de João Pessoa,João Pessoa,Mapeamento da evolução da COVID-19,N/A,1,PB,Nordeste
+Inloco,Caruaru,Monitoramento do fluxo de pessoas,N/A,1,PE,Nordeste
+Prefeitura de Jaboatão dos Guararapes,Jaboatão dos Guararapes,Telemedicina,N/A,1,PE,Nordeste
+Brainy Resolution,Recife,Telemedicina,N/A,1,PE,Nordeste
+Inloco,Recife,Monitoramento do fluxo de pessoas,N/A,1,PE,Nordeste
+Mamba Labs,Recife,Mapeamento da evolução da COVID-19,N/A,1,PE,Nordeste
+Núcleo de Gestão do Porto Digital,Recife,Mapeamento da evolução da COVID-19,N/A,1,PE,Nordeste
+Prefeitura do Recife,Recife,Monitoramento do fluxo de pessoas,N/A,1,PE,Nordeste
+Colab,Teresina,Telemedicina,Mapeamento da evolução da COVID-19,1,PI,Nordeste
+Inloco,Teresina,Monitoramento do fluxo de pessoas,N/A,1,PI,Nordeste
+Scipopulis,Teresina,Monitoramento do fluxo de pessoas,N/A,1,PI,Nordeste
+Inloco,Cascavel,Monitoramento do fluxo de pessoas,N/A,1,PR,Sul
+Inloco,Curitiba,Monitoramento do fluxo de pessoas,N/A,1,PR,Sul
+Instituto Laura Fressatto,Curitiba,Telemedicina,N/A,1,PR,Sul
+Unale,Curitiba,Monitoramento de temperatura,N/A,1,PR,Sul
+Prefeitura de Fazenda Rio Grande,Fazenda Rio Grande,Mapeamento da evolução da COVID-19,N/A,1,PR,Sul
+Inloco,Foz do Iguaçu,Monitoramento do fluxo de pessoas,N/A,1,PR,Sul
+Prefeitura de Foz do Iguaçu,Foz do Iguaçu,Telemedicina,Mapeamento da evolução da COVID-19,1,PR,Sul
+Inloco,Maringá,Monitoramento do fluxo de pessoas,N/A,1,PR,Sul
+IDS Software e Assessoria,Pinhais,Telemedicina,N/A,1,PR,Sul
+Inloco,Ponta Grossa,Monitoramento do fluxo de pessoas,N/A,1,PR,Sul
+Instituto Laura Fressatto,São José dos Pinhais,Telemedicina,N/A,1,PR,Sul
+Prefeitura de São José dos Pinhais,São José dos Pinhais,Fornecimento de informações,Mapeamento da evolução da COVID-19,1,PR,Sul
+Prefeitura de São José dos Pinhais,São José dos Pinhais,Mapeamento da evolução da COVID-19,N/A,1,PR,Sul
+Prefeitura de Umuarama,Umuarama,Mapeamento da evolução da COVID-19,N/A,1,PR,Sul
+Instituto D'Or de Pesquisa e Ensino,Campos dos Goytacazes,Telemedicina,Digitalização de serviços públicos,1,RJ,Sudeste
+Instituto D'Or de Pesquisa e Ensino,Macaé,Telemedicina,Digitalização de serviços públicos,1,RJ,Sudeste
+Prefeitura de Maricá,Maricá,Fornecimento de informações,Digitalização de serviços públicos,1,RJ,Sudeste
+Inloco,Niterói,Monitoramento do fluxo de pessoas,N/A,1,RJ,Sudeste
+Instituto D'Or de Pesquisa e Ensino,Nova Iguaçu,Telemedicina,Digitalização de serviços públicos,1,RJ,Sudeste
+CyberLabs,Rio de Janeiro,Telemedicina,N/A,1,RJ,Sudeste
+Dahua Technology,Rio de Janeiro,Monitoramento de temperatura,N/A,1,RJ,Sudeste
+Inloco,Rio de Janeiro,Monitoramento do fluxo de pessoas,N/A,1,RJ,Sudeste
+Scipopulis,Rio de Janeiro,Monitoramento do fluxo de pessoas,N/A,1,RJ,Sudeste
+Unirio,Rio de Janeiro,Telemedicina,N/A,1,RJ,Sudeste
+Instituto D'Or de Pesquisa e Ensino,São João da Barra,Telemedicina,Digitalização de serviços públicos,1,RJ,Sudeste
+Eagle Tecnologia,São Leopoldo,Telemedicina,N/A,1,RJ,Sudeste
+Inloco,Teresópolis,Monitoramento do fluxo de pessoas,N/A,1,RJ,Sudeste
+ProntLife,Teresópolis,Telemedicina,N/A,1,RJ,Sudeste
+Prefeitura de Volta Redonda,Volta Redonda,Mapeamento da evolução da COVID-19,N/A,1,RJ,Sudeste
+Ministério Público RN,Parnamirim,Mapeamento da evolução da COVID-19,N/A,1,RN,Nordeste
+Brainy Resolution,Porto Velho,Telemedicina,N/A,1,RO,Norte
+Instituto Federal Farroupilha,Alegrete,Telemedicina,N/A,1,RS,Sul
+Inloco,Ijuí,Monitoramento do fluxo de pessoas,N/A,1,RS,Sul
+Eagle Tecnologia,Mampituba,Telemedicina,N/A,1,RS,Sul
+Dahua Technology,Porto Alegre,Monitoramento de temperatura,N/A,1,RS,Sul
+Inloco,Porto Alegre,Monitoramento do fluxo de pessoas,N/A,1,RS,Sul
+Pix Force; UFRGS,Porto Alegre,Monitoramento de temperatura,Identificação de pessoas,1,RS,Sul
+Scipopulis,Porto Alegre,Monitoramento do fluxo de pessoas,N/A,1,RS,Sul
+Inloco,Rio Grande,Monitoramento do fluxo de pessoas,N/A,1,RS,Sul
+Paipe,Sapiranga,Monitoramento de temperatura,N/A,1,RS,Sul
+Eagle Tecnologia,Três Cachoeiras,Telemedicina,N/A,1,RS,Sul
+Federação Catarinense de Municípios,Balneário Camboriú,Telemedicina,Mapeamento da evolução da COVID-19,1,SC,Sul
+Prefeitura de Balneário Camboriú; Polícia Militar SC,Balneário Camboriú,Monitoramento de uso de máscara,N/A,1,SC,Sul
+Sec. da Saúde de Blumenau,Blumenau,Telemedicina,N/A,1,SC,Sul
+CIGA-SC,Brusque,Rastreamento de contatos,N/A,1,SC,Sul
+Direta Telecomunicações,Florianópolis,Monitoramento de temperatura,Monitoramento de uso de máscara,1,SC,Sul
+Intelbras,Florianópolis,Monitoramento de temperatura,Monitoramento de uso de máscara; Identificação de pessoas,1,SC,Sul
+Topmed,Florianópolis,Telemedicina,Fornecimento de informações,1,SC,Sul
+Smart Tour Brasil,Governador Celso Ramos,Rastreamento de contatos,N/A,1,SC,Sul
+2bTriade,Itajaí,Monitoramento de temperatura,Monitoramento de uso de máscara,1,SC,Sul
+Prefeitura de Itajaí,Itajaí,Mapeamento da evolução da COVID-19,N/A,1,SC,Sul
+Olos Tecnologia,Jaraguá do Sul,Rastreamento de contatos,N/A,1,SC,Sul
+Prefeitura de Jaraguá do Sul,Jaraguá do Sul,Telemedicina,Mapeamento da evolução da COVID-19,1,SC,Sul
+Eagle Tecnologia,Passo de Torres,Telemedicina,N/A,1,SC,Sul
+Deconve Tech,Tubarão,Monitoramento do fluxo de pessoas,Monitoramento de uso de máscara,1,SC,Sul
+New System Vendas Inst. e Monitoram.,Tubarão,Monitoramento do fluxo de pessoas,Monitoramento de uso de máscara,1,SC,Sul
+Inloco,Aracaju,Monitoramento do fluxo de pessoas,N/A,1,SE,Nordeste
+Prefeitura de Aracaju,Aracaju,Rastreamento de contatos,N/A,1,SE,Nordeste
+Unale,Aracaju,Monitoramento de temperatura,N/A,1,SE,Nordeste
+Universidade Federal de Sergipe; Prefeitura de Aracaju,Aracaju,Mapeamento da evolução da COVID-19,N/A,1,SE,Nordeste
+Instituto Soma,Bauru,Mapeamento da evolução da COVID-19,N/A,1,SP,Sudeste
+Contsec Serviços,Campinas,Monitoramento de temperatura,Identificação de pessoas,1,SP,Sudeste
+Inloco,Campinas,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+Não Localizada,Campinas,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+Prefeitura de Campinas,Campinas,Mapeamento da evolução da COVID-19,N/A,1,SP,Sudeste
+Unicamp,Campinas,Monitoramento de temperatura,N/A,1,SP,Sudeste
+Unicamp,Campinas,Telemedicina,Fornecimento de informações; Mapeamento da evolução da COVID-19; Rastreamento de contatos,1,SP,Sudeste
+Dyno Security,Guarulhos,Monitoramento de temperatura,Monitoramento de uso de máscara,1,SP,Sudeste
+Não Localizada,Guarulhos,Monitoramento de temperatura,N/A,1,SP,Sudeste
+Não Localizada,Guarulhos,Mapeamento da evolução da COVID-19,N/A,1,SP,Sudeste
+Inloco,Jacareí,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+M4 Inteligência Digital,Santa Isabel,Telemedicina,N/A,1,SP,Sudeste
+Prefeitura de Santana de Parnaíba; Google,Santana de Parnaíba,Telemedicina,Fornecimento de informações,1,SP,Sudeste
+Inloco,Santo André,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+Prefeitura de Santo André; Eicon Controles Inteligentes,Santo André,Digitalização de serviços públicos,Telemedicina,1,SP,Sudeste
+Prefeitura de Santos,Santos,Mapeamento da evolução da COVID-19,N/A,1,SP,Sudeste
+Prefeitura de São Caetano do Sul; USP,São Caetano do Sul,Rastreamento de contatos,N/A,1,SP,Sudeste
+Inloco,São Carlos,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+Inloco,São Paulo,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+LifesHub,São Paulo,Rastreamento de contatos,N/A,1,SP,Sudeste
+Prefeitura de São Paulo,São Paulo,Digitalização de serviços públicos,N/A,1,SP,Sudeste
+Scipopulis,São Paulo,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+Sec. Mun. da Saúde de São Paulo,São Paulo,Telemedicina,Fornecimento de informações,1,SP,Sudeste
+SPTrans,São Paulo,Monitoramento do fluxo de pessoas,N/A,1,SP,Sudeste
+Não Localizada,São Sebastião,Monitoramento de temperatura,N/A,1,SP,Sudeste
+Ministério da Saúde,Sorocaba,Rastreamento de contatos,N/A,1,SP,Sudeste
+Ministério da Saúde,Araguaína,Mapeamento da evolução da COVID-19,Rastreamento de contatos,1,TO,Nordeste

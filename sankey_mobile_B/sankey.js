@@ -5,9 +5,9 @@ async function draw() {
     height: 1200,
     margin: {
       top: 50,
-      right: 220,
+      right: 300,
       bottom: 50,
-      left: 160
+      left: 300
     },
     nodeWidth: 10
   }

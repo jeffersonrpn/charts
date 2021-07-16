@@ -1,0 +1,132 @@
+source,target,value,regiao,count,tipo,funcao,uf
+GO,Monitoramento do fluxo de pessoas,1,Centro-Oeste,41,regiao,Monitoramento do fluxo de pessoas,GO
+GO,Monitoramento do fluxo de pessoas,1,Centro-Oeste,41,regiao,Monitoramento do fluxo de pessoas,GO
+GO,Monitoramento do fluxo de pessoas,1,Centro-Oeste,41,regiao,Monitoramento do fluxo de pessoas,GO
+DF,Telemedicina,1,Centro-Oeste,37,regiao,Telemedicina,DF
+GO,Telemedicina,1,Centro-Oeste,37,regiao,Telemedicina,GO
+GO,Telemedicina,1,Centro-Oeste,37,regiao,Telemedicina,GO
+MS,Telemedicina,1,Centro-Oeste,37,regiao,Telemedicina,MS
+MS,Telemedicina,1,Centro-Oeste,37,regiao,Telemedicina,MS
+GO,Rastreamento de contatos,1,Centro-Oeste,11,regiao,Rastreamento de contatos,GO
+GO,Digitalização de serviços públicos,1,Centro-Oeste,3,regiao,Digitalização de serviços públicos,GO
+AL,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,AL
+PB,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PB
+PB,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PB
+PE,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PE
+PE,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PE
+PE,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PE
+PI,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PI
+PI,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,PI
+SE,Monitoramento do fluxo de pessoas,1,Nordeste,41,regiao,Monitoramento do fluxo de pessoas,SE
+PE,Telemedicina,1,Nordeste,37,regiao,Telemedicina,PE
+PE,Telemedicina,1,Nordeste,37,regiao,Telemedicina,PE
+PI,Telemedicina,1,Nordeste,37,regiao,Telemedicina,PI
+BA,Monitoramento de temperatura,1,Nordeste,17,regiao,Monitoramento de temperatura,BA
+BA,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,BA
+CE,Monitoramento de temperatura,1,Nordeste,17,regiao,Monitoramento de temperatura,CE
+PB,Monitoramento de temperatura,1,Nordeste,17,regiao,Monitoramento de temperatura,PB
+PB,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,PB
+PE,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,PE
+PE,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,PE
+RN,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,RN
+SE,Monitoramento de temperatura,1,Nordeste,17,regiao,Monitoramento de temperatura,SE
+SE,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,SE
+TO,Mapeamento da evolução da COVID-19,1,Nordeste,17,regiao,Mapeamento da evolução da COVID-19,TO
+SE,Rastreamento de contatos,1,Nordeste,11,regiao,Rastreamento de contatos,SE
+PB,Fornecimento de informações,1,Nordeste,3,regiao,Fornecimento de informações,PB
+BA,Identificação de pessoas,1,Nordeste,1,regiao,Identificação de pessoas,BA
+AC,Monitoramento do fluxo de pessoas,1,Norte,41,regiao,Monitoramento do fluxo de pessoas,AC
+AP,Monitoramento do fluxo de pessoas,1,Norte,41,regiao,Monitoramento do fluxo de pessoas,AP
+RO,Telemedicina,1,Norte,37,regiao,Telemedicina,RO
+AM,Mapeamento da evolução da COVID-19,1,Norte,17,regiao,Mapeamento da evolução da COVID-19,AM
+AM,Rastreamento de contatos,1,Norte,11,regiao,Rastreamento de contatos,AM
+ES,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,ES
+MG,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,MG
+MG,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,MG
+MG,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,MG
+RJ,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,RJ
+RJ,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,RJ
+RJ,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,RJ
+RJ,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,RJ
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+SP,Monitoramento do fluxo de pessoas,1,Sudeste,41,regiao,Monitoramento do fluxo de pessoas,SP
+MG,Telemedicina,1,Sudeste,37,regiao,Telemedicina,MG
+MG,Telemedicina,1,Sudeste,37,regiao,Telemedicina,MG
+MG,Telemedicina,1,Sudeste,37,regiao,Telemedicina,MG
+MG,Telemedicina,1,Sudeste,37,regiao,Telemedicina,MG
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+RJ,Telemedicina,1,Sudeste,37,regiao,Telemedicina,RJ
+SP,Telemedicina,1,Sudeste,37,regiao,Telemedicina,SP
+SP,Telemedicina,1,Sudeste,37,regiao,Telemedicina,SP
+SP,Telemedicina,1,Sudeste,37,regiao,Telemedicina,SP
+SP,Telemedicina,1,Sudeste,37,regiao,Telemedicina,SP
+RJ,Monitoramento de temperatura,1,Sudeste,17,regiao,Monitoramento de temperatura,RJ
+RJ,Mapeamento da evolução da COVID-19,1,Sudeste,17,regiao,Mapeamento da evolução da COVID-19,RJ
+SP,Mapeamento da evolução da COVID-19,1,Sudeste,17,regiao,Mapeamento da evolução da COVID-19,SP
+SP,Monitoramento de temperatura,1,Sudeste,17,regiao,Monitoramento de temperatura,SP
+SP,Mapeamento da evolução da COVID-19,1,Sudeste,17,regiao,Mapeamento da evolução da COVID-19,SP
+SP,Monitoramento de temperatura,1,Sudeste,17,regiao,Monitoramento de temperatura,SP
+SP,Monitoramento de temperatura,1,Sudeste,17,regiao,Monitoramento de temperatura,SP
+SP,Monitoramento de temperatura,1,Sudeste,17,regiao,Monitoramento de temperatura,SP
+SP,Mapeamento da evolução da COVID-19,1,Sudeste,17,regiao,Mapeamento da evolução da COVID-19,SP
+SP,Mapeamento da evolução da COVID-19,1,Sudeste,17,regiao,Mapeamento da evolução da COVID-19,SP
+SP,Monitoramento de temperatura,1,Sudeste,17,regiao,Monitoramento de temperatura,SP
+MG,Rastreamento de contatos,1,Sudeste,11,regiao,Rastreamento de contatos,MG
+MG,Rastreamento de contatos,1,Sudeste,11,regiao,Rastreamento de contatos,MG
+SP,Rastreamento de contatos,1,Sudeste,11,regiao,Rastreamento de contatos,SP
+SP,Rastreamento de contatos,1,Sudeste,11,regiao,Rastreamento de contatos,SP
+SP,Rastreamento de contatos,1,Sudeste,11,regiao,Rastreamento de contatos,SP
+RJ,Fornecimento de informações,1,Sudeste,3,regiao,Fornecimento de informações,RJ
+SP,Digitalização de serviços públicos,1,Sudeste,3,regiao,Digitalização de serviços públicos,SP
+SP,Digitalização de serviços públicos,1,Sudeste,3,regiao,Digitalização de serviços públicos,SP
+PR,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,PR
+PR,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,PR
+PR,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,PR
+PR,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,PR
+PR,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,PR
+RS,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,RS
+RS,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,RS
+RS,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,RS
+RS,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,RS
+SC,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,SC
+SC,Monitoramento do fluxo de pessoas,1,Sul,41,regiao,Monitoramento do fluxo de pessoas,SC
+PR,Telemedicina,1,Sul,37,regiao,Telemedicina,PR
+PR,Telemedicina,1,Sul,37,regiao,Telemedicina,PR
+PR,Telemedicina,1,Sul,37,regiao,Telemedicina,PR
+PR,Telemedicina,1,Sul,37,regiao,Telemedicina,PR
+RS,Telemedicina,1,Sul,37,regiao,Telemedicina,RS
+RS,Telemedicina,1,Sul,37,regiao,Telemedicina,RS
+RS,Telemedicina,1,Sul,37,regiao,Telemedicina,RS
+SC,Telemedicina,1,Sul,37,regiao,Telemedicina,SC
+SC,Telemedicina,1,Sul,37,regiao,Telemedicina,SC
+SC,Telemedicina,1,Sul,37,regiao,Telemedicina,SC
+SC,Telemedicina,1,Sul,37,regiao,Telemedicina,SC
+SC,Telemedicina,1,Sul,37,regiao,Telemedicina,SC
+PR,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,PR
+PR,Mapeamento da evolução da COVID-19,1,Sul,17,regiao,Mapeamento da evolução da COVID-19,PR
+PR,Mapeamento da evolução da COVID-19,1,Sul,17,regiao,Mapeamento da evolução da COVID-19,PR
+PR,Mapeamento da evolução da COVID-19,1,Sul,17,regiao,Mapeamento da evolução da COVID-19,PR
+RS,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,RS
+RS,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,RS
+RS,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,RS
+SC,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,SC
+SC,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,SC
+SC,Monitoramento de temperatura,1,Sul,17,regiao,Monitoramento de temperatura,SC
+SC,Mapeamento da evolução da COVID-19,1,Sul,17,regiao,Mapeamento da evolução da COVID-19,SC
+SC,Rastreamento de contatos,1,Sul,11,regiao,Rastreamento de contatos,SC
+SC,Rastreamento de contatos,1,Sul,11,regiao,Rastreamento de contatos,SC
+SC,Rastreamento de contatos,1,Sul,11,regiao,Rastreamento de contatos,SC
+PR,Fornecimento de informações,1,Sul,3,regiao,Fornecimento de informações,PR
+SC,Monitoramento de uso de máscara,1,Sul,1,regiao,Monitoramento de uso de máscara,SC

@@ -215,13 +215,13 @@ async function draw() {
     .html(d => d);
 
   d3.select("#filter-uf").on("change", (e) => {
-    const uf = "--";
+    const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
     applyFilter(uf, product);
   });
   
   d3.select("#filter-product").on("change", (e) => {
-    const uf = "--";
+    const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
     applyFilter(uf, product);
   });

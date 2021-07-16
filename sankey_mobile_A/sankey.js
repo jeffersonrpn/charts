@@ -2,7 +2,7 @@ async function draw() {
 
   const dimensions = {
     width: 800,
-    height: 1200,
+    height: 700,
     margin: {
       top: 50,
       right: 220,
@@ -215,13 +215,13 @@ async function draw() {
     .html(d => d);
 
   d3.select("#filter-uf").on("change", (e) => {
-    const uf = "--";
+    const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
     applyFilter(uf, product);
   });
   
   d3.select("#filter-product").on("change", (e) => {
-    const uf = "--";
+    const uf = d3.select("#filter-uf").property("value");
     const product = d3.select("#filter-product").property("value");
     applyFilter(uf, product);
   });
