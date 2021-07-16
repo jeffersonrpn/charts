@@ -1,0 +1,132 @@
+source,target,value,uf,regiao,count,tipo,funcao
+Aparecida de Goiânia,Monitoramento do fluxo de pessoas,1,GO,Centro-Oeste,41,regiao,Monitoramento do fluxo de pessoas
+Aparecida de Goiânia,Monitoramento do fluxo de pessoas,1,GO,Centro-Oeste,41,regiao,Monitoramento do fluxo de pessoas
+Caldas Novas,Monitoramento do fluxo de pessoas,1,GO,Centro-Oeste,41,regiao,Monitoramento do fluxo de pessoas
+Brasília,Telemedicina,1,DF,Centro-Oeste,37,regiao,Telemedicina
+Luziânia,Telemedicina,1,GO,Centro-Oeste,37,regiao,Telemedicina
+Luziânia,Telemedicina,1,GO,Centro-Oeste,37,regiao,Telemedicina
+Campo Grande,Telemedicina,1,MS,Centro-Oeste,37,regiao,Telemedicina
+Campo Grande,Telemedicina,1,MS,Centro-Oeste,37,regiao,Telemedicina
+Aparecida de Goiânia,Rastreamento de contatos,1,GO,Centro-Oeste,11,regiao,Rastreamento de contatos
+Aparecida de Goiânia,Digitalização de serviços públicos,1,GO,Centro-Oeste,3,regiao,Digitalização de serviços públicos
+Maceió,Monitoramento do fluxo de pessoas,1,AL,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Campina Grande,Monitoramento do fluxo de pessoas,1,PB,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+João Pessoa,Monitoramento do fluxo de pessoas,1,PB,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Caruaru,Monitoramento do fluxo de pessoas,1,PE,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Recife,Monitoramento do fluxo de pessoas,1,PE,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Recife,Monitoramento do fluxo de pessoas,1,PE,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Teresina,Monitoramento do fluxo de pessoas,1,PI,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Teresina,Monitoramento do fluxo de pessoas,1,PI,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Aracaju,Monitoramento do fluxo de pessoas,1,SE,Nordeste,41,regiao,Monitoramento do fluxo de pessoas
+Jaboatão dos Guararapes,Telemedicina,1,PE,Nordeste,37,regiao,Telemedicina
+Recife,Telemedicina,1,PE,Nordeste,37,regiao,Telemedicina
+Teresina,Telemedicina,1,PI,Nordeste,37,regiao,Telemedicina
+Salvador,Monitoramento de temperatura,1,BA,Nordeste,17,regiao,Monitoramento de temperatura
+Vitória da Conquista,Mapeamento da evolução da COVID-19,1,BA,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Fortaleza,Monitoramento de temperatura,1,CE,Nordeste,17,regiao,Monitoramento de temperatura
+João Pessoa,Monitoramento de temperatura,1,PB,Nordeste,17,regiao,Monitoramento de temperatura
+João Pessoa,Mapeamento da evolução da COVID-19,1,PB,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Recife,Mapeamento da evolução da COVID-19,1,PE,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Recife,Mapeamento da evolução da COVID-19,1,PE,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Parnamirim,Mapeamento da evolução da COVID-19,1,RN,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Aracaju,Monitoramento de temperatura,1,SE,Nordeste,17,regiao,Monitoramento de temperatura
+Aracaju,Mapeamento da evolução da COVID-19,1,SE,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Araguaína,Mapeamento da evolução da COVID-19,1,TO,Nordeste,17,regiao,Mapeamento da evolução da COVID-19
+Aracaju,Rastreamento de contatos,1,SE,Nordeste,11,regiao,Rastreamento de contatos
+João Pessoa,Fornecimento de informações,1,PB,Nordeste,3,regiao,Fornecimento de informações
+Salvador,Identificação de pessoas,1,BA,Nordeste,1,regiao,Identificação de pessoas
+Rio Branco,Monitoramento do fluxo de pessoas,1,AC,Norte,41,regiao,Monitoramento do fluxo de pessoas
+Macapá,Monitoramento do fluxo de pessoas,1,AP,Norte,41,regiao,Monitoramento do fluxo de pessoas
+Porto Velho,Telemedicina,1,RO,Norte,37,regiao,Telemedicina
+Manaus,Mapeamento da evolução da COVID-19,1,AM,Norte,17,regiao,Mapeamento da evolução da COVID-19
+Manaus,Rastreamento de contatos,1,AM,Norte,11,regiao,Rastreamento de contatos
+Cachoeiro de Itapemirim,Monitoramento do fluxo de pessoas,1,ES,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Belo Horizonte,Monitoramento do fluxo de pessoas,1,MG,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Governador Valadares,Monitoramento do fluxo de pessoas,1,MG,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Varginha,Monitoramento do fluxo de pessoas,1,MG,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Niterói,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Rio de Janeiro,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Rio de Janeiro,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Teresópolis,Monitoramento do fluxo de pessoas,1,RJ,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Campinas,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Campinas,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Jacareí,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Santo André,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+São Carlos,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+São Paulo,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+São Paulo,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+São Paulo,Monitoramento do fluxo de pessoas,1,SP,Sudeste,41,regiao,Monitoramento do fluxo de pessoas
+Belo Horizonte,Telemedicina,1,MG,Sudeste,37,regiao,Telemedicina
+Belo Horizonte,Telemedicina,1,MG,Sudeste,37,regiao,Telemedicina
+Itajubá,Telemedicina,1,MG,Sudeste,37,regiao,Telemedicina
+Juiz de Fora,Telemedicina,1,MG,Sudeste,37,regiao,Telemedicina
+Campos dos Goytacazes,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+Macaé,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+Nova Iguaçu,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+Rio de Janeiro,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+Rio de Janeiro,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+São João da Barra,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+São Leopoldo,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+Teresópolis,Telemedicina,1,RJ,Sudeste,37,regiao,Telemedicina
+Campinas,Telemedicina,1,SP,Sudeste,37,regiao,Telemedicina
+Santa Isabel,Telemedicina,1,SP,Sudeste,37,regiao,Telemedicina
+Santana de Parnaíba,Telemedicina,1,SP,Sudeste,37,regiao,Telemedicina
+São Paulo,Telemedicina,1,SP,Sudeste,37,regiao,Telemedicina
+Rio de Janeiro,Monitoramento de temperatura,1,RJ,Sudeste,17,regiao,Monitoramento de temperatura
+Volta Redonda,Mapeamento da evolução da COVID-19,1,RJ,Sudeste,17,regiao,Mapeamento da evolução da COVID-19
+Bauru,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,Mapeamento da evolução da COVID-19
+Campinas,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,Monitoramento de temperatura
+Campinas,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,Mapeamento da evolução da COVID-19
+Campinas,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,Monitoramento de temperatura
+Guarulhos,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,Monitoramento de temperatura
+Guarulhos,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,Monitoramento de temperatura
+Guarulhos,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,Mapeamento da evolução da COVID-19
+Santos,Mapeamento da evolução da COVID-19,1,SP,Sudeste,17,regiao,Mapeamento da evolução da COVID-19
+São Sebastião,Monitoramento de temperatura,1,SP,Sudeste,17,regiao,Monitoramento de temperatura
+Betim,Rastreamento de contatos,1,MG,Sudeste,11,regiao,Rastreamento de contatos
+Governador Valadares,Rastreamento de contatos,1,MG,Sudeste,11,regiao,Rastreamento de contatos
+São Caetano do Sul,Rastreamento de contatos,1,SP,Sudeste,11,regiao,Rastreamento de contatos
+São Paulo,Rastreamento de contatos,1,SP,Sudeste,11,regiao,Rastreamento de contatos
+Sorocaba,Rastreamento de contatos,1,SP,Sudeste,11,regiao,Rastreamento de contatos
+Maricá,Fornecimento de informações,1,RJ,Sudeste,3,regiao,Fornecimento de informações
+Santo André,Digitalização de serviços públicos,1,SP,Sudeste,3,regiao,Digitalização de serviços públicos
+São Paulo,Digitalização de serviços públicos,1,SP,Sudeste,3,regiao,Digitalização de serviços públicos
+Cascavel,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Curitiba,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Foz do Iguaçu,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Maringá,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Ponta Grossa,Monitoramento do fluxo de pessoas,1,PR,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Ijuí,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Porto Alegre,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Porto Alegre,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Rio Grande,Monitoramento do fluxo de pessoas,1,RS,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Tubarão,Monitoramento do fluxo de pessoas,1,SC,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Tubarão,Monitoramento do fluxo de pessoas,1,SC,Sul,41,regiao,Monitoramento do fluxo de pessoas
+Curitiba,Telemedicina,1,PR,Sul,37,regiao,Telemedicina
+Foz do Iguaçu,Telemedicina,1,PR,Sul,37,regiao,Telemedicina
+Pinhais,Telemedicina,1,PR,Sul,37,regiao,Telemedicina
+São José dos Pinhais,Telemedicina,1,PR,Sul,37,regiao,Telemedicina
+Alegrete,Telemedicina,1,RS,Sul,37,regiao,Telemedicina
+Mampituba,Telemedicina,1,RS,Sul,37,regiao,Telemedicina
+Três Cachoeiras,Telemedicina,1,RS,Sul,37,regiao,Telemedicina
+Balneário Camboriú,Telemedicina,1,SC,Sul,37,regiao,Telemedicina
+Blumenau,Telemedicina,1,SC,Sul,37,regiao,Telemedicina
+Florianópolis,Telemedicina,1,SC,Sul,37,regiao,Telemedicina
+Jaraguá do Sul,Telemedicina,1,SC,Sul,37,regiao,Telemedicina
+Passo de Torres,Telemedicina,1,SC,Sul,37,regiao,Telemedicina
+Curitiba,Monitoramento de temperatura,1,PR,Sul,17,regiao,Monitoramento de temperatura
+Fazenda Rio Grande,Mapeamento da evolução da COVID-19,1,PR,Sul,17,regiao,Mapeamento da evolução da COVID-19
+São José dos Pinhais,Mapeamento da evolução da COVID-19,1,PR,Sul,17,regiao,Mapeamento da evolução da COVID-19
+Umuarama,Mapeamento da evolução da COVID-19,1,PR,Sul,17,regiao,Mapeamento da evolução da COVID-19
+Porto Alegre,Monitoramento de temperatura,1,RS,Sul,17,regiao,Monitoramento de temperatura
+Porto Alegre,Monitoramento de temperatura,1,RS,Sul,17,regiao,Monitoramento de temperatura
+Sapiranga,Monitoramento de temperatura,1,RS,Sul,17,regiao,Monitoramento de temperatura
+Florianópolis,Monitoramento de temperatura,1,SC,Sul,17,regiao,Monitoramento de temperatura
+Florianópolis,Monitoramento de temperatura,1,SC,Sul,17,regiao,Monitoramento de temperatura
+Itajaí,Monitoramento de temperatura,1,SC,Sul,17,regiao,Monitoramento de temperatura
+Itajaí,Mapeamento da evolução da COVID-19,1,SC,Sul,17,regiao,Mapeamento da evolução da COVID-19
+Brusque,Rastreamento de contatos,1,SC,Sul,11,regiao,Rastreamento de contatos
+Governador Celso Ramos,Rastreamento de contatos,1,SC,Sul,11,regiao,Rastreamento de contatos
+Jaraguá do Sul,Rastreamento de contatos,1,SC,Sul,11,regiao,Rastreamento de contatos
+São José dos Pinhais,Fornecimento de informações,1,PR,Sul,3,regiao,Fornecimento de informações
+Balneário Camboriú,Monitoramento de uso de máscara,1,SC,Sul,1,regiao,Monitoramento de uso de máscara
