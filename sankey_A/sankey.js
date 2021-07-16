@@ -1,8 +1,8 @@
 async function draw() {
 
   const dimensions = {
-    width: 800,
-    height: 1200,
+    width: 600,
+    height: 850,
     margin: {
       top: 50,
       right: 220,
@@ -13,7 +13,7 @@ async function draw() {
   }
   dimensions.wrapperWidth = dimensions.width + dimensions.margin.left + dimensions.margin.right;
   dimensions.wrapperHeight = dimensions.height + dimensions.margin.top + dimensions.margin.top;
-  const offOpacity = 0.1;
+  const offOpacity = 0.05;
   const onOpacity = 0.7;
 
   const links = await d3.csv("data3.csv");
@@ -49,7 +49,7 @@ async function draw() {
     .nodeId(d => d.name)
     .nodeAlign(d3.sankeyJustify)
     .nodeWidth(dimensions.nodeWidth)
-    .nodePadding(10)
+    .nodePadding(6)
     .nodeSort(null)
     .extent([[1, 2], [dimensions.width - 1, dimensions.height - 5]]);
 
