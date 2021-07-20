@@ -21,9 +21,15 @@ async function draw() {
     l.value = +l.value;
     l.count = +l.count;
   });
-  const ufs = Array.from(d3.group(links.filter(d => d.uf != ""), d => d.uf).keys());
-  const products = Array.from(d3.group(links.filter(d => d.funcao != ""), d => d.funcao).keys());
+  const ufs = Array.from(d3.group(links.filter(d => d.uf !== ""), d => d.uf).keys());
+  const cities = Array.from(d3.group(links.filter(d => d.tipo === "regiao"), d => d.source));
+  const products = Array.from(d3.group(links.filter(d => d.funcao !== ""), d => d.funcao).keys());
   ufs.sort((a, b) => {
+    if (a < b) { return -1; }
+    if (a > b) { return 1; }
+    return 0;
+  });
+  cities.sort((a, b) => {
     if (a < b) { return -1; }
     if (a > b) { return 1; }
     return 0;
@@ -120,8 +126,8 @@ async function draw() {
       tooltipBody.html(d.name);
       tooltip.attr("transform", `translate(${xy[0]}, ${xy[1]})`);
     });
-    // .append("title")
-    // .text(d => `${d.name}\n${d.value}`)
+  // .append("title")
+  // .text(d => `${d.name}\n${d.value}`)
 
   const link = bounds.append("g")
     .attr("fill", "none")
@@ -143,7 +149,7 @@ async function draw() {
     .attr("id", d => "link" + d.index)
     .attr("class", d => {
       if (d.tipo === 'regiao') {
-        return `sankey-link link-regiao link-${d.uf} link-${removeBlank(d.funcao)}`;
+        return `sankey-link link-regiao link-${d.uf} link-${removeBlank(d.source.name)} link-${removeBlank(d.funcao)}`;
       } else {
         return `sankey-link link-funcao link-${removeBlank(d.funcao)}`;
       }
@@ -216,18 +222,44 @@ async function draw() {
 
   d3.select("#filter-uf").on("change", (e) => {
     const uf = d3.select("#filter-uf").property("value");
+    const city = d3.select("#filter-city").property("value");
     const product = d3.select("#filter-product").property("value");
-    applyFilter(uf, product);
+    if (uf !== "") {
+      d3.select("#filter-city-wrapper").style("display", null);
+      const citiesFilter = cities.filter(d => d[1][0]["uf"] == uf);
+      citiesFilter.unshift(["--", [{source: { name: "Filtrar por cidade"}}, []]])
+      d3.select("#filter-city").selectAll("option").remove();
+      d3.select("#filter-city")
+        .selectAll("option")
+        .data(citiesFilter)
+        .enter()
+        .append("option")
+        .attr("value", d => removeBlank(d[0]))
+        .text(d => d[1][0]["source"]["name"]);
+    } else {
+      d3.select("#filter-city-wrapper").style("display", "none");
+    }
+    applyFilter(uf, city, product);
   });
-  
+
+  d3.select("#filter-city").on("change", (e) => {
+    const uf = d3.select("#filter-uf").property("value");
+    const city = d3.select("#filter-city").property("value");
+    const product = d3.select("#filter-product").property("value");
+    applyFilter(uf, city, product);
+  });
+
   d3.select("#filter-product").on("change", (e) => {
     const uf = d3.select("#filter-uf").property("value");
+    const city = d3.select("#filter-city").property("value");
     const product = d3.select("#filter-product").property("value");
-    applyFilter(uf, product);
+    applyFilter(uf, city, product);
   });
 
   d3.select("#filter-clear").on("click", (e) => {
     d3.select("#filter-uf").property("value", "--");
+    d3.select("#filter-city-wrapper").style("display", "none");
+    d3.select("#filter-city").property("value", "--");
     d3.select("#filter-product").property("value", "--");
     d3.selectAll(".sankey-link").attr("stroke-opacity", onOpacity);
   });
@@ -260,14 +292,24 @@ async function draw() {
     return (uf !== '--' && product !== '--');
   }
 
-  function applyFilter(uf, product) {
+  function applyFilter(uf, city, product) {
     d3.selectAll(".sankey-link").attr("stroke-opacity", offOpacity);
-    if (checkDoubleFilterApplied(uf, product)) {
-      d3.selectAll(`.link-${uf}`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
-      d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+    if (city !== "--") {
+      if (checkDoubleFilterApplied(uf, product)) {
+        d3.selectAll(`.link-${city}`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+        d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+      } else {
+        d3.selectAll(`.link-${city}`).attr("stroke-opacity", onOpacity);
+        d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+      }
     } else {
-      d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
-      d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+      if (checkDoubleFilterApplied(uf, product)) {
+        d3.selectAll(`.link-${uf}`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+        d3.selectAll(`.link-funcao`).filter(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+      } else {
+        d3.selectAll(`.link-${uf}`).attr("stroke-opacity", onOpacity);
+        d3.selectAll(`.link-${removeBlank(product)}`).attr("stroke-opacity", onOpacity);
+      }
     }
   }
 
